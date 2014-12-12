@@ -1,0 +1,816 @@
+<html>
+<head>
+<title>Using the Menus
+</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE=
+"0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Using 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix; 
+Menus</font>
+<p>
+
+Look here for information about &browser.name; menu items.
+
+<ul>
+<li> <a Href="#file_menu">File</a>
+<li> <a Href="#edit_menu">Edit</a>
+	<ul>
+	<li><a href="display_prefs.html">General Preferences, Display</a>
+	<li><a href="text_prefs.html">General Preferences, Text</a>
+	<li><a href="clock_prefs.html">General Preferences, Clock</a>
+	<li><a href="mail_prefs.html">General Preferences, Mail</a>
+	<li><a href="proxies.html">General Preferences, Proxies</a>
+	<li><a href="viewer_apps.html">Content Viewer Preferences</a> (not all platforms)
+	<li><a href="security.html">Security Preferences</a>
+</ul>
+<li> <a Href="#view_menu">View</a>
+<li> <a Href="#go_menu">Go</a>
+<li> <a Href="#bookmarks_menu">Bookmarks</a>
+<li> <a Href="#help_menu">Help</a>
+</ul>
+
+<p>
+<hr>
+<p>
+
+<dl>
+<dt><a name=file_menu></a><b>File Menu</b>
+<dd>
+<dl>
+
+<dt><b><a name="NewWindow">New Window</a></b>
+<dd>Starts a new &browser.name; window displaying your home page.  
+<p>
+If the New Window menu item is disabled, &browser.name; is running 
+low on <a href="trouble.html#memory">memory</a>. 
+
+<p>
+<dt><a name=goto_place></a><b>Open</b>
+<dd>Choose Open to display a dialog box in which you can type the
+<a href="exploring.html#urls">Address</a> of a new page to visit, or choose
+a file on your local system to open. This Address field is equivalent to the 
+Address field that is normally found in the header or footer of &browser.name;.  
+Use this dialog box if you have disabled the default Address field by choosing 
+"None" for the <a href="display_prefs.html#Locator">Address option</a> 
+in the Screen Layout section of the General Preferences Display page.
+<p>
+Use the <a name="OpenFile">File</a> button in the Open dialog box
+to open a document on your local system.  The File button displays another 
+dialog box from which you can select a document to open. This is the 
+standard file chooser for your system. 
+<p>
+If the Open menu item is disabled, &browser.name; is running 
+low on <a href="trouble.html#memory">memory</a>. 
+
+<p>
+<dt><b><a name="SaveFile">Save As</a></b>
+<dd>Displays the Save Document dialog box so you can specify a location in which
+to save the currently displayed <a href="exploring.html#HTML">HTML</a> 
+document. The saved file includes the HTML format tags, so it does not 
+look exactly the same as what you see displayed in the browser. This dialog 
+box is the standard file chooser for your platform.
+
+<a name="SaveLink"></a>
+<p>
+You can also save a link or an image by pressing the right mouse button 
+over the desired link or image, then choosing <b>Save this Link</b> or 
+<b>Save this Image</b> from the <nobr><wbr>pop-up</nobr> menu. 
+
+<p>
+<dt><a name=frame.save></a><b>Save Frame As</a></b> 
+<dd>If the current page contains multiple frames (which look like rectangular
+boxed areas), Save Frame As displays a dialog box in which you can specify a 
+file in which to save the currently selected frame's 
+<a href="exploring.html#HTML">HTML</a> source. 
+This works like the Save As menu item described above, except that it saves
+a specific frame.  If the current page contains frames, the Save As menu item
+saves the HTML page containing the <i>frameset</i> that defines the grouping
+of frames on the page, instead of the currently selected frame.
+<p>
+To select a different frame, click anywhere within that frame.
+
+<p>
+<dt><b><a name=print>Print</a></b> 
+<dd>Displays the Print dialog box, which varies depending on your platform.
+<p>
+The size and style of the printed text depend on the Printer Font
+and Printer Font Size settings, set on the 
+<a href="text_prefs.html">Text Preferences</a> page.
+<p>
+Please note that if the page cannot be printed using the specified 
+printer font size without clipping wide text, such as tables or preformatted 
+HTML text (for example, code samples), the print type size will be scaled down 
+so that all the text fits on the printed page. If the scaling is too small, you 
+might want to try printing in <i>Landscape mode</i>, where pages are printed 
+with the long edges of the paper at the top and bottom. More text can fit on 
+each line, so the scaling down of type size is less likely to be necessary. 
+<p>
+The standard Print dialog box for your system enables you to specify 
+some combination of the following items, but probably not all of them:
+
+<ul>
+<li>Name of the printer to print to and, on some platforms, properties 
+associated with that particular printer.
+<p>
+<li>Orientation, to specify Portrait printing (where the long side of
+the paper is vertical, like most books), or Landscape printing (the long 
+side of the paper is horizontal).
+<p>
+<li>Title for your Print Job or Banner Page (the cover sheet).
+<p>
+<li>Page Description Type, such as PostScript or PCL (Printer Control 
+Language).  This information specifies what format of printed output your
+printer understands.  In most cases, you should use the default format
+specified, which is usually PostScript.  If you're not sure what your
+printer requires, either try different options or talk to your System 
+Administrator.
+<p>
+<li>Paper Size. Common paper size options are Letter (8.5 x 11 in.), 
+Legal (8.5 x 14 in.), A4 (210 x 297 mm.), or Executive (7.25 x 10.25 in.).
+<p>
+<li>Input Slot, which specifies how paper is fed to your printer.  Most 
+of the time, the paper is loaded from a cassette of paper, but there may 
+be instances when you want or need to load paper manually, one sheet at 
+a time.
+<p>
+<li>Number of copies to print.
+<p>
+<li>An option to print to a file instead of a printer.  In this case, you 
+will be asked for the name of a file to be created.
+<p>
+<li>Any desired print command options used with your standard print command. 
+For example, on Solaris<font size=-2><sup>TM</sup></font> systems, you can 
+specify "no banner page" by typing 
+<kbd>-o nobanner</kbd> in the Print Command Options field.  This generates the 
+Solaris print command <kbd>lp -o nobanner</kbd>.
+<p>
+<li>The print range, which is always the entire current web page.  No matter 
+how large a web page is, it's considered to be one page. Therefore the entire 
+web page is printed, even if it results in many physical pages.
+<p>
+<li>An option to collate multiple copies.
+</ul>
+The Print menu item is equivalent to the Print 
+button <img src="doc:/lib/images/print.gif">.
+
+<p>
+<dt><a name=frame.print></a><b>Print Frame</a></b> 
+<dd>If the current page contains multiple frames (which look like rectangular
+boxed areas), Print Frame prints the currently selected frame.
+This works like the Print menu item described above, except that it prints
+only a specific frame.  If the current page contains frames, the Print menu 
+item described above prints every frame on the page.
+<p>
+To select a different frame, click anywhere within that frame.  You can then
+use the Print Frame menu item to print just that part of the page.
+
+<p>
+<dt><b><a name=send.mail>Send Mail</a></b>
+<dd>Displays a form you can use to send email, optionally including the 
+web site address or <a href="exploring.html#HTML">HTML</a> source for the current page. 
+<p>
+Type the destination email address in the <b>To</b> field, and type
+your message in the large <b>Message</b> area. To send your mail to 
+multiple people, separate the email addresses with spaces or commas.
+<p>
+<a name="MailIncludeURL"></a>
+Click the <b>Include Web Site Address</b> button to add the web page
+address (also known as the URL) of the current page to the Message area.  This 
+is a convenient way to tell somebody about a web page you found.
+<p>
+<a name="MailAttachHTML"></a>
+Select <b>Attach HTML</b> to add the HTML source of the current page as
+an attachment to your message. You won't actually see the HTML source in
+the Send Mail form, but the receiver will see it as an attachment when the 
+message is sent.
+<p>
+Click the <b>Send</b> button to send the message. 
+
+<p>
+<dt><b><a name="CloseWindow">Close Window</a></b>
+<dd>Closes the current &browser.name; window. If there are multiple &browser.name; 
+windows open, only the current window is closed. If this is the only 
+&browser.name; window, Close quits &browser.name; application.
+
+<p>
+<dt><b><a name="ExitBrowser">Exit</a></b>
+<dd>Exits &browser.name;, quitting all &browser.name; windows started 
+in the current session.
+</dl>	
+</dl>	
+
+<dl>
+<dt><a name=edit_menu></a><b>Edit Menu</b>
+<dd>
+<dl>
+<dt><b><a name=EditCopy>Copy</a></b>
+<dd>Copies selected text from the currently displayed document to the system 
+clipboard. This menu item is only active when text is selected on a page 
+displayed by &browser.name;.  You cannot use this menu item to select 
+text from an applet or a browser field, including the Address field.
+
+<p>
+<dt><b><a name=EditPaste>Paste</a></b>
+<dd>Pastes text from the system clipboard into the 
+Address field.  If text is currently selected in the Address field, the pasted
+text will overwrite the selected text.  Otherwise, the text will be pasted at
+the location of the cursor.
+<p>
+You can copy text to the system clipboard using the Copy key on your keyboard,
+or the <nobr><wbr>Edit->Copy</nobr> menu item.
+
+<p>
+<dt><b><a name=find>Find in Page</a></b>
+<dd>Displays the Find window, in which you
+type the text you want to search for in the current page. If the
+text is found, it is highlighted, and the page scrolls if necessary to display
+the highlighted text. 
+<p>
+If the current page contains multiple frames, the search will take place in
+the currently selected frame.  The currently selected frame is identified 
+by a thin black border.  To select a different frame, click anywhere inside
+that frame.
+<p>
+By default, the search operation is not case sensitive, which means 
+&browser.name; 
+does not distinguish between upper- or lowercase text while 
+searching. For example, a request to find the word <em>Java</em> will 
+find <em>java</em>, <em>JAVA</em>, <em>jAvA</em>, or any other 
+combination of upper- and lowercase letters. 
+<p>
+You can also choose to do a case-sensitive search, which means &browser.name;
+does distinguish between upper- and lowercase text, and only
+finds text that matches exactly.  Thus a case-sensitive request
+to find <em>Java</em> will only find the string <em>Java</em>; 
+it will not find <em>java</em>, <em>JAVA</em>, and so on.
+<p>
+Use the Find button in the Find window to initiate each search.
+The search begins either from the currently highlighted text or from the
+top of the current page (or frame) if no text is highlighted.
+<p>
+Use the Clear button to quickly empty the Find field.  
+<br>
+Use the Close button to dismiss the Find window.
+
+<p>
+<dt><a name=search></a><b>Search the Internet</b>
+<dd>Search the Internet takes you to a search page, where you can use one or
+more search engines to find web pages on any topic.
+
+<p>
+<dt><a name=prefs></a><b>Preference Pages</b>
+<dd>Use the Preferences options to display the various Preference pages.
+<p>
+Each Preferences page has OK, Apply, Cancel, and Help buttons at the bottom.  
+The default button (typically the OK button) is bordered by a black line.  
+If you press Enter or Return, the default button action is performed.
+<p>
+Click <b>OK</b> to activate any changes you've made 
+and dismiss the Preferences page.
+<p>
+Click <b>Apply</b> to activate any changes you've made but leave the 
+Preferences page displayed.
+<p>
+Click <b>Cancel</b> to cancel any setting changes you haven't yet applied 
+and close the window.
+<p>
+Click <b>Help</b> to see the documentation about that
+particular page. 
+<p>
+Follow these links for information about the Preference pages:
+<ul>
+<li><a href="display_prefs.html">General Preferences, Display</a>
+<li><a href="text_prefs.html">General Preferences, Text</a>
+<li><a href="clock_prefs.html">General Preferences, Clock</a>
+<li><a href="mail_prefs.html">General Preferences, Mail</a>
+<li><a href="proxies.html">General Preferences, Proxies</a>
+<li><a href="security.html">Security Preferences</a>
+</ul>
+<p>
+On platforms that support launching external applications, you will also see 
+a <a href="viewer_apps.html">Content Viewer Preferences</a> page.
+This is not available on JavaStation<font size=-2><sup>TM</sup></font>
+platforms.
+
+</dl>
+</dl>
+
+<dl>
+<dt><a name=view_menu></a><b>View Menu</b><dd> 
+<dl>
+<dt><b><a name=reload></a>Reload Page</b>
+<dd>Reloads the current page. This is useful if changes have been made
+to the current <a href="exploring.html#HTML">HTML</a> source, if a page 
+doesn't load correctly the first time, or to restart an applet that 
+stopped running during a low memory condition. 
+<br>
+Reload Page is equivalent to the Reload Page 
+button <img src="doc:/lib/images/reload.gif">.
+
+<p>
+<dt><b><a name=background.images>Display Background Images</a></b>
+<dd>This option is selected by default. Disable this option
+if you don't want to display the backgrounds of pages.  This can 
+increase the speed of loading a page and, in some cases, make pages easier 
+to read. 
+<p>
+If you normally display background images but want to turn the background 
+image off for the current page, deselect the Display Background Images 
+check box.  When you're done viewing the page, you may want to choose
+Display Background Images again to turn background images back on for other
+pages.
+<p>
+The Display Background Images option applies only to backgrounds made up of
+an image, or a tiled (repeated) image.  Display Background Images
+has no affect on backgrounds that are a solid color.
+
+<p>
+<dt><a name=stop><b>Stop Loading</b></a>
+<dd>Stops all loading of the current page. This menu item is available only
+while a page is being loaded. Only the <em>loading</em> of a page is stopped;
+if an applet has been loaded and is running, this will not stop the applet.
+If &browser.name; is making a connection when you choose Stop Loading, 
+&browser.name; still completes the connection attempt.
+<br>
+Stop Loading is equivalent to the Stop Loading 
+button <img src="doc:/lib/images/stop.gif">.
+
+<p>
+<dt><b><a name=character.sets>Character Encoding</a></b>
+<dd>
+&browser.name; supports the Unicode 2.0 character encoding, and can display
+both Latin and non-Latin Unicode characters from regions all over the globe.
+<p>
+To view HTML pages that use an alternate character encoding, choose that 
+encoding from the Character Encoding submenus. Only one alternate character 
+encoding can be specified at any one time.  The current character 
+encoding is shown in the submenus with a selected check box.
+<p>
+If the http server sends information with a page telling &browser.name;
+what character encoding the page uses, &browser.name; will automatically 
+display that page with that character encoding.
+<p>
+<a name="AutoDetect"></a>
+If you choose Auto Detect in the Japanese character encoding submenu, 
+&browser.name; tries to analyze the page to determine which Japanese character 
+encoding to use.  
+<p>
+To successfully view a page containing an alternate character encoding, you 
+must have the appropriate system fonts available on your system. Contact your 
+system administrator for help.
+
+<p>
+<dt><b><a name=ignore.charset>Ignore Charset Directive</a></b>
+<dd>Sometimes the author of an HTML page, or the server that sends the page,
+uses a meta tag to direct the browser to use a particular character encoding. 
+In this case, the browser is expected always to use that character encoding, 
+regardless of the <a href="#character.sets">Character Encoding</a> option you 
+have chosen.  In the unusual case that the "directed" character encoding is 
+incorrect, &browser.name; cannot correctly render the page. You will 
+be prompted to try to ignore the character set directive, and then 
+try to display the page using the default (or some other) character encoding.
+<p>
+To ignore the character set specified by the page author or server, select
+Ignore Charset Directive. This option should normally be selected <i>only</i> 
+when you encounter a page that specifies an incorrect character encoding. 
+
+<p>
+<dt><a name=html.source></a><b>Page Source</b> 
+<dd>Opens a window in which the current page's 
+<a href="exploring.html#HTML">HTML</a> source file is displayed. 
+<p> 
+You can save the HTML text to a file using the <nobr><wbr>File->Save As</nobr>
+menu item.
+
+<p>
+<dt><a name=frame.source></a><b>Frame Source</b> 
+<dd>If the current page contains multiple frames (which look like rectangular
+boxed areas), Frame Source opens a page in which the currently selected frame's 
+<a href="exploring.html#HTML">HTML</a> source file is displayed. 
+To select a different frame, click anywhere within that frame.
+<p>
+If the current page contains frames, the Page Source option displays the
+page containing the <i>frameset</i> that defines the grouping of frames on 
+the page.  Use Frame Source to display the source for the individual frames.
+<p>
+If the current page does not contain frames, the Frame Source menu item 
+is disabled.
+
+<p>
+<dt><b><a name="Console">Show Console</a></b>
+<dd>Display the Java<font size=-2><sup>TM</sup></font> Console to see output and 
+error messages from Java applets and JavaScript<font size=-2><sup>TM</sup></font> 
+commands running in &browser.name;, as well as messages output by 
+&browser.name; itself.
+</dl>
+</dl>
+
+<dl>
+<dt><a name=go_menu></a><b>Go Menu</b>
+<dd>
+<dl>
+<dt><a name=back></a><b>Back</b>
+<dd>Back takes you back to the previous place you visited. If you choose Back 
+again, it takes you to the place you visited the time before that, and so on. 
+You can also access the Back menu item by pressing the right mouse button when 
+the pointer is in the &browser.name; display window.
+<br>
+Back is equivalent to the Back button <img src="doc:/lib/images/back.gif">.
+
+<p>
+<dt><a name=forward></a><b>Forward</b>
+<dd>Forward displays the page viewed prior to choosing Back (or prior to 
+clicking the Back button). Forward only works after Back has been used.
+You can also access the Forward menu item by pressing the right mouse 
+button with the pointer in the &browser.name; display window.
+<br>
+Forward is equivalent to the Forward button <img src="doc:/lib/images/fwd.gif">.
+
+<p>
+<dt><a name=home></a><b>Home</b>
+<dd>Loads the home page you selected using the 
+Home Page Address option on the 
+<a href="display_prefs.html">Display Preferences</a> page. If you 
+haven't specified a home page, the default home page is loaded. 
+The default home page is either Sun Microsystems, Inc.'s home page, 
+or a home page set up by your system administrator.
+<br>
+This is equivalent to the Home button <img src="doc:/lib/images/home.gif">.
+(If the Home Page Address field on the Display Preferences page is blank,
+the Home button will be disabled.)
+
+<p>
+<dt><b><a name=history></a>Show History</b>
+<dd>Every time you visit a page, its address (or URL) is automatically appended 
+to the bottom of the <b>History</b> list for the current browser window. 
+When you choose the Show History item, a page is displayed that consists 
+of links to all the items on that History list.
+<p>
+Each browser window that you have open maintains a separate History list.
+Visiting a page in one &browser.name; window does not add that page to a 
+different &browser.name; window's History list.
+<p>
+When you close a &browser.name; window, its History list is deleted. (This
+only happens when the window is closed, not when it's minimized or iconified.)
+When you open a new &browser.name; window, a fresh History list for that
+window is started.
+All History lists are restarted with each new &browser.name; session. 
+You cannot delete an address from a History list, or edit it in any way. 
+
+</dl>
+</dl>
+
+
+<dl>
+<dt><a name=bookmarks_menu></a><b>Bookmarks Menu</b>
+<dd>
+Use the items on the Bookmarks menu to mark and revisit pages. 
+<p>
+This section contains a fair amount of detailed information about &browser.name;
+bookmarks.  To skip past the details and get
+straight to information about a particular menu item, use these links:
+<ul>
+<li><a href="#edit.bookmarks">Edit Bookmarks</a>
+<li><a href="#add.bookmark">Add Bookmark</a>
+<li><a href="#file.bookmark">File Bookmark</a>
+<li><a href="#go.to.bookmark">Go to Bookmark</a>
+</ul>
+<p>
+In addition to these four standard menu items, you may display bookmarks from
+your <a href="#PersonalBookmarks">Personal Bookmarks list</a> at the bottom of the 
+Bookmarks menu.
+
+<p>
+A bookmark is simply a placeholder for the address of a previously visited web 
+page.
+<p>
+<a name="BookmarkLists"></a>
+Bookmarks in &browser.name; are organized into <i>Bookmark Lists</i>.
+To organize these lists, choose Edit Bookmarks from the Bookmarks menu. 
+This displays the Bookmarks window. You may want to display this window 
+for reference while reading this section.
+
+<p>
+&browser.name; initially provides you with two or three Bookmark Lists, 
+as described below.  The Personal Bookmarks and Cool Bookmarks lists can't be
+deleted, but you can add more lists of your own.  
+
+<p>
+The default Bookmark Lists are:
+
+<ul>
+<li><b><a name="PersonalBookmarks">Personal Bookmarks</a></b>
+<br>The Personal Bookmarks list contains the pages added whenever you choose Add 
+Bookmark from the Bookmarks menu.  
+
+<p>
+You can keep the new bookmarks you add on this list, or you can move them to 
+other lists.
+See <a href="#edit.bookmarks">Edit Bookmarks</a> for information about managing
+your Personal Bookmarks and other lists.  
+
+<p>
+By default, all bookmarks in your Personal Bookmarks list are also displayed at 
+the bottom of your Bookmarks menu (after the Go to Bookmarks item) for easy access.
+Just choose the bookmark in the Bookmarks menu to display that page.
+If you prefer, you can keep your Personal Bookmarks off the main Bookmarks 
+menu using the Show Personal Bookmarks in Bookmarks Menu option on the 
+<a href="display_prefs.html#show_bookmarks">Display Preferences</a> page.
+
+<p>
+<li><b><a name="CoolBookmarks">Cool Bookmarks</a></b>
+<br>Cool Bookmarks initially contains a list of useful bookmarks, including 
+several pages commonly used to search the World Wide Web. Add or remove items 
+from this list to make it reflect your personal idea of Cool Bookmarks.
+
+<p>
+<li><b><a name="NetscapeBookmarks">Netscape<font size=-2><sup>TM</sup></font> 
+Bookmarks List</a></b>
+<br>This list is created each time you run &browser.name; if it 
+finds a list of bookmarks created by Netscape Navigator<font size=-2><sup>TM</sup></font>. 
+<p>
+Because this page automatically gets updated with your latest set of Netscape 
+bookmarks every time you run &browser.name;, you cannot modify this list 
+(for example, add or delete items) from within &browser.name;.  
+</ul>
+
+<p>
+The Bookmarks menu provides the following functions:
+
+<dl>
+<dt><b><a name=edit.bookmarks>Edit Bookmarks</a></b>
+<dd>This displays the <b>Bookmarks window</b>, which you use to
+organize and revisit bookmarks on your Bookmark Lists. 
+<p>
+Lists (indicated by <img src="doc:/lib/images/list.icon.gif">) are displayed 
+in the top part of the window; the contents of the
+currently selected list are displayed in the bottom. 
+<p>
+Each list consists of bookmarks (links to pages) and folders. Each folder 
+can contain more folders, bookmarks, or both. You can think of a list as a 
+top-level folder.  
+<p>
+<a name=OpenFolder></a>
+Double-click a closed folder (indicated by 
+<img src="doc:/lib/images/folder.icon.gif">)
+to open it. You can only see and access items in a folder when it is open. 
+The contents of an open folder are displayed in a list beneath that folder.
+<p>
+Double-click an open folder (indicated by 
+<img src="doc:/lib/images/openfldr.icon.gif">)
+to close it in order to preserve space in your list.   
+<p>
+<a name="VisitURL"></a>
+<b>To visit a page</b>, double-click the bookmark. Bookmarks are indicated 
+by lines of plain text in the bottom half of the Bookmarks window.
+<p>
+Hold down the Shift key while double-clicking the bookmark to open the page
+in a new &browser.name; window.
+
+<p>
+<a name="DisplayURL"></a>
+<b>To see the address of a bookmark</b>, click the bookmark to select it. 
+The address of the bookmark is displayed in the message area at the bottom of the
+Bookmarks window.
+<p>
+
+<a name="AddBookmark"></a>
+<b>To add a new bookmark to a list:</b>
+<ol>
+<li>Display the page in &browser.name;.
+<p>
+<li>Choose Add Bookmark from the Bookmarks menu.
+<br>This adds the current page to the end of the Personal Bookmarks list. 
+<p>
+Alternatively, use the File Bookmark submenu to add a new page directly to 
+a list of your choice.
+</ol>
+<p>
+Or:
+<ol>
+<li>Choose Edit Bookmarks from the Bookmarks menu.
+<br>This displays the Bookmarks window.
+<p><li>Select the list in the Bookmarks window where you want to add the 
+new page.
+<p><li>Choose New Bookmark from the Bookmarks window File menu.
+<br>This displays the Add New Bookmark window.
+<p><li>Type the address and title for the new page, then click the OK button.
+</ol>
+
+<p>
+<a name="DeleteBookmark"></a>
+<b>To delete a bookmark, list, or folder:</b>
+<ol>
+<li>If the Bookmarks window is not currently displayed, choose
+<nobr><wbr>Bookmarks->Edit Bookmarks</nobr> to display it.
+<p><li>Select the bookmark, list, or folder you want to delete. If the 
+bookmark or folder you want to delete is not displayed, select the list
+in which it appears to display the contents of that list.
+<p><li>Choose <nobr><wbr>Edit->Delete</nobr> in the Bookmarks window.
+<p>
+If you make a mistake or change your mind after you delete the item,
+choose <nobr><wbr>Edit->Undo</nobr>. 
+</ol>
+
+<p>
+<a name="MoveBookmark"></a>
+<b>To move a bookmark or folder to a new location:</b>
+<ol>
+<li>If the Bookmarks window is not currently displayed, choose
+<nobr><wbr>Bookmarks->Edit Bookmarks</nobr> to display it.
+<p><li>If the item you want to move is not in the currently selected list,
+select the list containing the item. 
+<p><li>Select the item in the list that you want to move.
+<p><li>Drag the item to its new location. 
+This can be another location within the same list, or it can be 
+another list. If you drop the bookmark on another list or folder, it is 
+added at the top of that list or folder.
+</ol>
+<p>
+<b>To move a bookmark or folder to a new location using 
+Cut, Copy, and Paste:</b>
+<ol>
+<li>Select the bookmark or folder you want to move.
+<p>
+<li>Choose <nobr><wbr>Edit->Cut</nobr> in the Bookmarks window if 
+you want to move the item; choose <nobr><wbr>Edit->Copy</nobr> if you'd 
+prefer to leave a copy of the item in its original location. 
+<p>
+<li>Select the new list or folder in which you want to put the item being moved.
+<p>
+<li>Choose <nobr><wbr>Edit->Paste</nobr> in the Bookmarks window. 
+<p>
+The cut or copied item is added to the selected list or folder.
+The Paste menu item is only available after you have done a Cut or Copy.
+<p>
+<li>If you make a mistake or change your mind at any time while using Cut,
+Copy, and Paste, choose <nobr><wbr>Edit->Undo</nobr> to undo the last Cut, 
+Copy, or Paste operation.
+</ol>
+
+<p>
+<a name="CreateNewList"></a>
+<b>To create a new list</b>, choose New List from the Bookmarks window
+File menu. The new list will appear in the top section of the Bookmarks
+window and in the Bookmarks menu of &browser.name;.
+
+<p>
+<a name="CreateNewFolder"></a>
+<b>To create a new folder</b>, choose New Folder from the Bookmarks 
+window File menu.  The new folder will appear at the top of the currently 
+selected list.  
+
+<p>
+<a name="Rename"></a>
+<b>To rename a list, folder, or a bookmark's title or address</b>, select the 
+item you want to rename, then 
+choose <nobr><wbr>Edit->Properties</nobr> in the Bookmarks window. 
+You can also double-click on a list to rename it.
+<p>
+<b>To add a horizontal line to a list</b>, choose New Separator from the 
+Bookmarks window File menu. Drag the new separator to the desired location. 
+Separators are useful to keep your lists organized into groups or categories.
+
+<p>
+<a name="Sort"></a>
+<b>To sort a list or folder</b>, select the list or folder to be sorted, 
+then choose the desired sort method from the View menu: 
+<ul>
+<li>In alphabetical order (Sort by Title) 
+<li>By date visited, most recently visited pages first (Sort by Date Visited)
+<li>By frequency of visits, most frequently visited pages first (Sort by Most
+Frequently Visited) 
+</ul>
+<p>
+After you've sorted a list or folder, you can reverse the order by choosing 
+<nobr><wbr>View->Reverse Current Order.</nobr>  
+For example, if you want your list ordered from least recently visited 
+pages to most recently visited, select the list, choose 
+<nobr><wbr>View->Sort by Date Visited,</nobr>
+then choose <nobr><wbr>View->Reverse Current Order.</nobr>
+
+<p>
+<a name="Importing"></a>
+<b>To import a list into the Bookmark Lists</b>,
+choose <b>Import Bookmarks</b> from the File menu in the Bookmarks window. 
+This is useful if you have a list of bookmarks saved from 
+another browser. The list must be stored in 
+<a href="exploring.html#HTML">HTML</a> format and have a .html or .htm 
+extension in order to be read into the &browser.name; Bookmark Lists.
+
+<p>
+<a name="SavingLists"></a>
+<b>To save a list</b> as an HTML file, choose <b>Save List as HTML</b> from 
+the File menu in the Bookmarks window. This saves whatever is 
+currently selected in the Bookmarks window, whether it's a list, 
+folder, or individual bookmark.
+<p>
+
+<dt><b><a name="add.bookmark">Add Bookmark</a></b>
+<dd>
+This adds the current page to the <a href="#PersonalBookmarks">Personal Bookmarks</a> List. 
+<p>
+You can also add a link to the Personal Bookmarks List by pressing the right 
+mouse button over the link to display the Commands <nobr><wbr>pop-up</nobr>
+menu, then choosing <b>Add Bookmark</b>.
+<p>
+See <a href="#edit.bookmarks">Edit Bookmarks</a> for information about 
+managing your Personal Bookmarks and other lists.  
+
+<p>
+<dt><b><a name="file.bookmark">File Bookmark</a></b>
+<dd>
+This adds the current page to the list you choose from the File Bookmark 
+submenu. 
+
+<p>
+<dt><b><a name="go.to.bookmark">Go to Bookmark</a></b>
+<dd>Use the Go to Bookmark submenu to revisit a place saved in one
+of your lists.  
+
+<!-- feature removed for now
+<p>
+<dt><b><a name=sethome></a>Set New Home Page</b>
+<dd>This makes the currently displayed page &browser.name;'s home page,
+the page first displayed when you start the browser.
+You can display this page at any time by clicking the Home button or 
+choosing Home from the Go menu.
+-->
+
+<p>
+</dl>
+</dl>
+
+<dl>
+<dt><a name=help_menu></a><b>Help Menu</b>
+<dd>The Help menu is located to the far right of the header.
+
+<dl>
+<dt><b>Getting Started</b>
+<dd>See this page for a brief tutorial on using &browser.name;.
+
+<p>
+<dt><b>User's Guide</b>
+<dd>A link to what you're reading now.
+
+<p>
+<dt><b>Release Notes</b>
+<dd>All about the current &browser.name; release.
+	
+<!-- These items removed from Help menu, at least temporarily.
+<p>
+<dt><b>Java Home Page</b>
+<dd>A link to the JavaSoft home page, which contains all the current 
+information about Java and Java-related products.
+
+<p>
+<dt><b>Comments</b>
+<dd>Do you have general comments about &browser.name;? We'd like to hear them. Use
+this form to send them.
+<p>
+For information on using the Comments mail form, see the description 
+of the <a href="#send.mail">Send Mail</a> page.  
+
+<p>
+<dt><b>Submit a Bug</b><dd>
+Use this form if you have a &browser.name; bug to report or a feature to 
+request.
+-->
+
+<p>
+<dt><b>About &browser.name;</b>
+<dd>Indicates the &browser.name; version and who worked on this and 
+previous versions.	
+
+</dl>
+</dl>
+
+<hr>
+<p>
+<p>
+
+<table>
+<tr>
+   <td width="170"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+<p>
+
+</body>
+</html>

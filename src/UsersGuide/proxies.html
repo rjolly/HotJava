@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Proxies
+</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE=
+"0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Proxies</font>
+<p>
+
+Use the Proxy Preferences 
+to set your &browser.name.prefix;<font size=-2><sup>TM</sup></font>
+&browser.name.suffix; proxy servers, as described below. Choose 
+<nobr><wbr>Edit->General Preferences</nobr>, then select Proxies from 
+the options on the left side of the General Preferences dialog box. 
+<p>
+When you access a web page, &browser.name; tries by default to connect
+directly to the machine specified in the address (or <i>URL</i>). If you're 
+running &browser.name; on a company network, you may find that you can't 
+access web pages outside your network. This is probably because your
+company has set up a secure network <i>firewall</i> that can't be
+penetrated except by going through a <i>proxy server</i>. Proxy servers
+are programs that handle communication between a protected network and
+the Internet at large.  These programs typically verify users and keep
+a log of accesses.
+<p>
+<a name="ProxyServers"></a>
+If you can't access web pages outside your network, you probably
+need to specify proxy servers. You may need to ask your system
+administrator for the name of the proxy server you should use, and the
+corresponding <i>port</i>. The port is the "channel" the proxy uses to
+listen for particular types of communications requests.
+<p>
+<a name="Cache"></a>
+Another reason to use proxies is to improve performance and reduce
+network traffic. Many proxy servers <i>cache</i> the pages you visit. 
+Caching pages temporarily stores them to disk so they don't have to be 
+downloaded across the network again when they are subsequently accessed.
+If you have many requests on one network for the same web pages, caching 
+the pages in a single place saves time. 
+<p>
+You may need to set a different proxy and port for each of the different
+<a href="exploring.html#protocols">protocol types</a> 
+(<b>HTTP</b>, <b>Security</b>, <b>FTP</b>, and <b>Gopher</b>), or you may
+have to use the same proxy and port for each type. The Security proxy setting 
+is used to access sites that start with the <b>HTTPS</b> protocol.  Your system 
+administrator should tell you what you need.  
+
+<p>
+&nbsp;<br>
+<a name=dont.proxy></a>
+You can bypass your proxies when connecting to designated hosts, such as 
+hosts within your firewall. Type the names of the hosts you want to
+connect to directly, without using proxies, in the <b>Bypass Proxies</b> 
+text field. Use the full host name, in the form 
+<nobr><wbr><i>server-name.domain-name</i></nobr> 
+(for example, <b><kbd>myserver.mycompany.com</kbd></b>). 
+Separate multiple entries by spaces or carriage returns. 
+<p>
+You can also designate entire domains in the Bypass Proxies field by 
+entering a domain name that starts with a period. For example, type 
+<kbd><b>.mycompany.com</b></kbd> to bypass the proxies for <i>all</i> 
+hosts in the mycompany.com domain. 
+<p>
+If you haven't designated any proxies, you don't have to fill in the 
+Bypass Proxies field. In this case, no proxies will be used at any time.
+
+<p>
+&nbsp;<br>
+<a name="SOCKSServer"></a>
+<b>SOCKS</b> is another kind of server that allows access across a
+network firewall. Ask your system administrator if you should be using
+SOCKS or the protocol proxy servers, or both, and the name of the appropriate 
+servers.  Do not fill in values for the SOCKS server and port if you are
+not using a SOCKS server. If you put values in the SOCKS fields without a
+valid SOCKS server, &browser.name; will not be able to connect outside your 
+firewall.
+
+<p>
+&nbsp;<br>
+&browser.name; supports NCSA 1.3.A and CERN 3.0 proxy servers, and later 
+versions.
+<p>
+<hr>
+<p>
+<p>
+
+
+<table>
+<tr>
+   <td width="170"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+<p>
+
+</body>
+</html>

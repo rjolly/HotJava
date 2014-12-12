@@ -1,0 +1,45 @@
+<!-- @(#)viewer.unknown.html	1.5 99/03/12 -->
+<html>
+
+<head>
+<title>Unknown Viewer Application</title>
+<meta name=type content="hotjava/viewer">
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG SRC="../images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE="0" VSPACE="6"><br>
+
+<font color="666699" size="+3">Unknown Viewer Application</font>
+
+<p>
+&browser.name; does not have enough information about how to view this kind of
+file.
+
+<p>
+To do something with this file right now, choose one of the following:
+<ul>
+<li>Click on <strong>Save</strong> to save the file to your local file system. 
+<li>Click on <strong>View in Browser</strong> to attempt to view the file 
+in &browser.name;
+<li>Click on <strong>View in Application</strong> to choose an 
+application to launch in order to view the file you clicked on.
+</ul>
+<p>
+Note: Clicking on any of these buttons is a one-time operation and does 
+not result in any permanent configuration of &browser.name;
+
+<hr>
+
+<center>
+<applet code="&applet.package;.ContentViewerUnknownApplet"
+        width="400"
+	height="52">
+  <param name=url value="&url">
+  <param name=targetFile value="&targetFile;">
+</applet>
+</center>
+
+</body>
+
+</html>

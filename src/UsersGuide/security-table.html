@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Security Table</title>
+</head>
+
+<body bgcolor="#ffffff">
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE="0" V
+SPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Security Table</font>
+<p>
+
+The following table provides information about 
+Java<font size=-2><sup>TM</sup></font> applet and 
+JavaScript<font size=-2><sup>TM</sup></font> behavior allowed at each security 
+level in 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix;.  
+
+<p>
+The Unprotected security level is only available on the Special Cases Security 
+Preferences panel.  The Blocked security level is applied on the
+Applets and JavaScript panel when you unset Enable Applets, Enable 
+JavaScript, or both options.
+
+<p>
+The information in this table describes common applet or JavaScript behavior, 
+relevant to most users.  If you are a Java applet or JavaScript developer 
+interested in details about additional technical restrictions at the 
+various security levels (for example, accessing properties and manipulating 
+threads), see the security documentation shipped with the
+&browser.name; Administrator documents.
+
+<p>
+Note that in addition to the tangible protections described below,
+the Java language and &browser.name; work together to enforce other 
+constraints on JavaScript and Java applets
+to make them run in a safe fashion.  For example, applets are not
+permitted to send messages to windows that cause them to be closed
+(except windows the applet has created on its own).
+<p>
+<table border=1>
+  <tr align=center>
+    <td>
+    <td colspan=4>
+      <b>Security Restriction Level</b>
+  <tr align=left>
+    <td>
+    <td width=72> <b>Blocked</b>
+    <td width=72> <b>Restricted</b>
+    <td width=72> <b>Ask First</b>
+    <td width=72> <b>Unprotected</b>
+  <tr align=left>
+    <td> <b>Read Files</b>
+    <td> No
+    <td> No<sup>1</sup>
+    <td> Warn<sup>1</sup>
+    <td> Yes
+  <tr align=left>
+    <td> <b>Write Files</b>
+    <td> No
+    <td> No
+    <td> Warn
+    <td> Yes
+  <tr align=left>
+    <td> <b>Delete Files</b>
+    <td> No
+    <td> No
+    <td> Warn
+    <td> Yes
+  <tr align=left>
+    <td> <b>Exit &browser.name;</b>
+    <td> No
+    <td> No
+    <td> No
+    <td> No
+  <tr align=left>
+    <td> <b>Start Local Applications</b>
+    <td> No
+    <td> No
+    <td> Warn
+    <td> Warn
+  <tr align=left>
+    <td> <b>Accept Network Connection</b>
+    <td> No
+    <td> Limited<sup>2</sup>
+    <td> Warn<sup>7</sup>
+    <td> Yes
+  <tr align=left>
+    <td> <b>Connect to Another Computer</b>
+    <td> No
+    <td> Limited<sup>3</sup>
+    <td> Warn<sup>4</sup>
+    <td> Yes
+  <tr align=left>
+    <td> <b>Create Windows</b>
+    <td> No
+    <td> Yes<sup>5</sup>
+    <td> Yes<sup>5</sup>
+    <td> Yes
+  <tr align=left>
+    <td> <b>Access System Clipboard</b>
+    <td> No
+    <td> No
+    <td> No
+    <td> Yes
+  <tr align=left>
+    <td> <b>Access Print Queue</b>
+    <td> No
+    <td> No
+    <td> No
+    <td> Yes
+</table>
+<p>
+<b>Permissions listed as "Warn" have the following behavior:</b>
+<blockquote>
+Each time JavaScript or a Java applet attempts one of the listed actions, 
+(for example, read a file), &browser.name; checks its list of previously 
+granted permissions.  If the specific permission has been previously granted, 
+it is allowed.  Otherwise, you are queried through a dialog box to choose 
+from either allowing this specific action (read the specified file), allowing 
+all similar actions (read <i>any</i> file), or blocking the action (deny 
+reading this file this time).
+</blockquote>
+
+<b>Footnotes:</b>
+<p>
+1: JavaScript and applets with Ask First or Restricted security that are 
+loaded using the file protocol have read access (without warning) to files 
+in the directory from which they were loaded.
+<p>
+2: JavaScript and applets with Restricted security may accept connections from 
+their originating site, but no others.
+<p>
+3: Javascript and applets with Restricted security may connect to their 
+originating site, but no others.
+<p>
+4: You are warned and can deny permission when an applet attempts any network
+access <i>except</i> when connecting to the applet's original site.
+<p>
+5: Windows created by JavaScript or applets with Restricted or Ask First 
+security will show a warning banner at the top of the window.
+
+<p>
+<hr>
+<p>
+<p>
+
+<table>
+<tr>
+   <td width="170"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+<p>
+
+</body>
+</html>

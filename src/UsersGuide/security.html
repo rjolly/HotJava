@@ -1,0 +1,557 @@
+<html>
+<head>
+<title>Security Preferences
+</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE="0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Security Preferences</font>
+<p>
+
+Use the links below to jump directly to information about the main security 
+panels, or read the next section first for a general overview.
+<ul>
+<li><a href="#cookies">Cookies</a>
+<li><a href="#code">Applets and JavaScript (Advanced Mode Only)</a>
+<li><a href="#web.sites">Web Sites (SSL Versions Only)</a>
+<li><a href="#certificates">Certificates (Advanced Mode and SSL Versions Only)</a>
+</ul>
+
+<hr>
+<h2>Security Preferences</h2>
+
+When you use a browser to visit web sites and submit data to a web server 
+(for example, when you use a web site for online shopping), you may be 
+concerned about a handful of security issues.  Use the
+<nobr><wbr>Edit->Security Preferences</nobr> dialog box to specify your 
+security preferences.
+
+<p>
+For example, you might want to control if and when the browser writes 
+small bits of information (called <i>cookies</i>) on your machine about 
+the web sites you visit or the actions you perform at a particular site.
+Or, you might want to make sure that the information you send during an
+online shopping session can only be read by the intended receiver.
+
+<p>
+Another security issue is how much access you want to give to programs 
+included on web sites you visit.
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix; 
+can run executable content in the form of 
+JavaScript<font size=-2><sup>TM</sup></font> commands or 
+Java<font size=-2><sup>TM</sup></font> applets,
+which are programs that can be included in an HTML page, much like images can
+be included. You can be sure that JavaScript and Java applets running in 
+&browser.name; cannot inspect or change any of the files on your local system 
+or otherwise violate your system privacy without your permission. By default, 
+&browser.name; provides a secure environment for Java applets and JavaScript to 
+run in, but you can allow more permissions and thus give the programs more 
+power to do interesting things if you trust the program's source. 
+
+<p>
+The security options provided on the Security Preferences dialog box 
+depend on whether you are using the <b>Basic</b> or <b>Advanced</b> 
+Security Administration Mode, as specified at the top of the Security 
+Preferences dialog box. The Security Administration Mode tells &browser.name; 
+how much and what type of security information you want to control.  
+Basic mode allows you access and control over security information that 
+you normally need to use your browser.  Choose Advanced if you need more 
+fine-tuned and detailed control over security features such as applet and 
+JavaScript permissions, certificates, and SSL ciphers.
+
+<p>
+<a name=cookies></a>
+<hr>
+<h2>Cookies</h2>
+Cookies are small bits of information that the browser saves on your 
+system at the request of a web server.  The purpose of cookies is to store 
+information for a particular web site.  This information might be used to 
+save the state of the web site the last time you visited it, profile 
+information about you and the requests you've made, user preferences, 
+registration information, and so on.  
+
+<p>
+For example, if you're using a web site to read newsgroups, that site might
+use cookies to remember where you last left off reading.  A stock page
+might use cookies to note what stocks or mutual funds you want to see
+information about.  
+
+<p>
+Some cookies are saved in memory only for the current browser session. 
+Other cookies are <i>persistent</i>, meaning they are saved to disk
+for a specified period of time, which may extend past your current session.
+
+<p>
+Although cookies can be sent to the server where the web
+site that set them resides, <i>only</i> the cookie information set by that
+web site can be sent.  Cookies do not allow web servers to access other 
+files on your system.
+
+<p>
+Many web sites that request cookies can still be viewed without setting the 
+cookies, but some cannot.  If you choose not to set any cookies or a 
+particular cookie, you may be blocked from viewing some sites, some sites
+might look incomplete, or you may have only limited access to some sites.
+
+<p>
+Use the options in the Cookies section to tell &browser.name; which of the
+following options you prefer:
+
+<ul>
+<li>Allow cookies to be set without notice, and thus without interruption.
+(Accept all cookies)
+<li>Ask your permission each time a site wants to set a cookie. (Notify
+me before accepting each cookie)
+<li>Disable cookies altogether, and do not notify me when they are 
+encountered. (Do not accept cookies)
+</ul>
+
+<p>
+If you choose to be notified when cookies are set, you'll see a dialog box 
+each time a server wants to set a cookie.  It includes information about 
+the cookie, including when the cookie will expire.  If you select the 
+check box "Don't show this message in the future," &browser.name; will 
+accept all cookies in the future without notification.  You can change 
+your mind about this at any time by changing the Cookies option on the 
+Security Preferences dialog box.
+
+<p>
+At any time, you can click the <b>Discard Cookies</b> button to delete all
+information you currently have stored in cookies.  All cookies will be
+deleted at once.  
+
+<p>
+<hr>
+
+<a name=code></a>
+<h2>Java Applets and JavaScript (Advanced Mode Only)</h2>
+
+<a name=applet.links></a>
+<TABLE ALIGN="RIGHT" BGCOLOR="#D4D4D4" CELLPADDING="4" BORDER="1" WIDTH="235">
+<TR><TD>
+<P><FONT SIZE="-1">
+<b>For more information</b>&nbsp; about Java applets, including demos and free 
+applets you can use on your web pages, see the Sun 
+Microsystems<font size=-2><sup>TM</sup></font>, Inc.  
+<a href="http://java.sun.com/applets">Applets</a> page.  
+
+<p>
+For information about writing your own Java applets, see 
+<a href="http://java.sun.com/docs/books/tutorial/index.html">The Java 
+Tutorial</a>. 
+
+<p>
+For comprehensive information about the JavaScript language, including 
+how to use JavaScript in your web pages, see the 
+Netscape<font size=-2><sup>TM</sup></font>
+<a href="http://developer.netscape.com/docs/manuals/communicator/jsguide4/index.htm">JavaScript Guide</a>.
+
+<p>
+For technical information on how &browser.name; handles JavaScript and Java
+applets, see the administrator's documentation set shipped with &browser.name;.
+
+</FONT></P>
+</TD></TR>
+</TABLE>
+
+
+Java applets are small programs included on some web pages that &browser.name; 
+downloads to your computer when you access that page. These programs 
+are executable code that runs on your computer system. 
+JavaScript is a language of commands that can be embedded directly in an
+HTML file.  These commands are executed on your system when you access a web
+page containing JavaScript.
+
+<p>
+&browser.name; can prevent Java applets and JavaScript commands from 
+affecting your system in any way. You can grant applets and
+JavaScript code more relaxed permissions, thus allowing them to do more 
+interesting things but opening the door for <i>potentially</i> insecure 
+actions such as reading or writing files.
+
+<p>
+Use the settings on the Security Preferences dialog box to set a default 
+security level that will apply to JavaScript code and <i>unsigned</i> 
+applets, and one that will apply to all <i>signed</i> applets.  You can 
+also completely disable unsigned applets, JavaScript, or both.
+
+<p>
+&nbsp;<br>
+<a name=signed></a>
+<b>Signed versus Unsigned Applets</b>
+
+<p>
+Signed applets contain a digital <i>signature</i>, which is a sequence of 
+characters embedded in the applet's code. It is placed there by the originator 
+of the applet, and it can't be altered or duplicated. It tells who the applet 
+comes from, and that the applet has not been tampered with. A signature 
+doesn't tell you anything about the content or quality of the applet, 
+just that it comes from a particular source. 
+
+<!--
+If an applet is signed with a name you recognize and trust, you can probably 
+have confidence in it.
+-->
+
+<p>
+The majority of applets currently on the World Wide Web are unsigned applets.
+JavaScript code and unsigned applets are probably reliable, but you have 
+no way to know their source. An unsigned applet could also have been tampered 
+with in such a way that it does things its author didn't intend.
+
+<p>
+<b>Note:</b> If your version of &browser.name; does not support SSL (Secure
+Sockets Layer), signed applets are treated as unsigned applets.  That is,
+signed applets take on the security level you assign for unsigned applets.  
+This is because without SSL &browser.name; has no way to verify the 
+certificates of signed applets. You can tell if your version of &browser.name;
+supports SSL by setting the Security Administration Mode to Advanced.  If
+the only Advanced Security Mode options presented to you are for Cookies
+and Applets and JavaScript, your version does not support SSL. If your
+Advanced Security Mode options also include Web Sites and Certificates, 
+your version does support SSL, so signed and unsigned applets can be
+given different security levels.
+
+<p>
+&nbsp;<br>
+<b>Setting Security Levels</b>
+<p>
+Use the <b>Applets and JavaScript</b> panel to set a security level for 
+unsigned applets and JavaScript code.  You might want a more 
+restrictive security level on unsigned applets and JavaScript, since you
+can't always know their source.
+<p>
+Use the <b>Signed Applets</b> panel to set a separate security level for 
+signed applets.  
+<p>
+Use the <a href="#special.cases">Special Cases</a>
+panel to set a security level for applets and JavaScript from a particular
+web site or applets signed with <a name="#certificates">certificates</a> from 
+a particular source.
+
+<p>
+<a name=security.modes></a>
+The security level settings are:
+<ul>
+<li><b>Blocked</b>: Blocked applets and JavaScript code are not permitted 
+to run.  On the Applets and JavaScript panel, you can apply the Blocked
+setting by deselecting the <b>Enable Applets</b> or <b>Enable JavaScript</b> 
+options, or both. Deselecting the Enable Applets option blocks only 
+<i>unsigned</i> applets from running.  (Use the Signed Applets panel to 
+block signed applets.)
+<p>
+
+<li><b>Restricted</b>: Applets and JavaScript granted the Restricted Security 
+level run with safe constraints and are blocked from unsafe actions. They 
+can't read, write, or delete files.  They may connect to, and accept 
+connections from, only the server of their origin. They cannot access the 
+print queue or system clipboard. They can create new windows, but only 
+windows that contain a warning banner that lets you know the source of 
+the window.
+<p>
+
+<a name=ask.first></a>
+<li><b>Ask First</b>: Applets and JavaScript granted the Ask First Security 
+level run with safe constraints. In most cases, if they attempt any of the 
+actions prevented under the Restricted Security level, above, &browser.name; 
+will give you a warning, and you may then grant permission for that action if 
+you want.
+<p>
+There are a few exceptions to this rule of thumb. Applets and JavaScript with 
+the Ask First Security setting cannot exit &browser.name; or access the system 
+clipboard or print queue, even with a warning.  
+<p>
+
+<a name=unprotected></a>
+<li><b>Unprotected</b>: The unprotected option is only available 
+on the Special Cases panel. The unprotected mode allows applets
+and JavaScript to read, write, and delete files without warning, 
+connect to another computer and accept network connections without 
+warning, create windows without warning banners, and access the 
+system clipboard and print queue.  Use this mode only when you trust 
+the source of the applets and JavaScript.
+
+</ul>
+<p>
+
+If you would like to see a side-by-side comparison of what each security level 
+allows, see the <a href="security-table.html">Security Table</a>.
+
+<p>
+&nbsp;<br>
+<a name="special.cases"></a>
+<b>Special Cases</b>
+<p>
+Use Special Cases to override the global default security levels you 
+set for JavaScript, signed applets, and unsigned applets.  
+
+<p>
+You can set a security mode for all signed applets with a particular 
+<a name="#certificates">certificate</a>. 
+You can also set a security level for all applets and JavaScript from 
+a certain web site server, but you should use caution when doing this. In 
+general, this is only recommended for a site inside a trusted firewall, 
+because unsigned applets and JavaScript cannot be completely protected from 
+tampering.
+
+<p>
+<b>Note:</b> You cannot set special permissions for a <i>particular</i> 
+applet or script.  You can only set special permissions for <i>all</i> 
+applets or scripts coming from a particular site, or all signed applets 
+with a particular certificate.
+
+<p>
+There are various reasons that you might want to grant applets from a 
+particular site or signed with a particular trusted certificate more 
+permissive access to your system than the default. You might want to 
+allow a downloaded word processor from a trusted site, for example, to 
+save a file to your hard disk. Or you might want to allow applets that 
+originate within your company firewall to have full access to your system. 
+
+<p>
+Use the <b>New</b> button to add special security permissions for 
+a particular web site or certificate. The New Special Case dialog box
+enables you to set the basis for the special case to be either:
+<ul>
+<li>Applets and JavaScript from a web site you specify, or 
+<p>
+<li>Applets signed with a software publisher certificate you choose from 
+a menu. &browser.name; does not support signed JavaScript, so this option
+is only available for signed applets.
+<p>
+The list of available certificates to choose from consists of certificates 
+for all the signed applets you have previously run.  Therefore, to add a 
+certificate to this list, run a signed applet that is signed with that 
+certificate in &browser.name; (for example, by loading a page containing 
+that signed applet).
+</ul>
+
+<p>
+For each web site or certificate you specify, you can set any of the 
+<a href="#security.modes">security modes</a> described above. 
+
+<p>
+<a name=web.sites></a>
+<hr>
+<h2>Web Sites (SSL Versions Only)</h2>
+
+<b>Note:</b> The Web Sites options are only available in versions of 
+&browser.name; that support SSL (Secure Sockets Layer).  If these options 
+don't appear on your Security Preferences dialog box in the list at the left 
+side, your version of &browser.name; does not support these features.  
+
+<a name=secure.web.sites></a>
+<p>
+Secure web sites start with <b>https://</b> (as opposed to
+<b>http://</b>), and are available to you if your version of &browser.name;
+supports SSL (Secure Sockets Layer).  
+<p>
+When you connect to a secure web site, information that passes between
+your site and the https secure server may be encrypted while in transit.
+Only your computer and the server can make sense of that information.  This
+is important because it allows you to securely transfer private information,
+such as credit card numbers and passwords.
+<p>
+In addition to encrypting information in transit, SSL support means that 
+the https secure server can <i>authenticate</i> itself to &browser.name;. 
+This means that no other computer can pretend to be the secure site, and 
+thereby intercept information you send to that site.
+<p>
+<a name=lock></a>
+When &browser.name; connects to a secure site, the icon at the left
+of the status bar (typically at the bottom of the browser) appears
+locked: <img src="doc:/lib/images/lockOn.gif">
+<br>
+Otherwise it appears unlocked: <img src="doc:/lib/images/lock.gif">
+
+<p>
+You can click the lock icon at any time to display information about where 
+the current page comes from, whether it was encrypted before it was 
+transferred, and if it was encrypted, what 
+<a href="#ciphers">cipher</a> was used to encrypt the page.
+
+<p>
+&nbsp;<br>
+<a name=warnings></a>
+<b>Warnings</b>
+
+<p>
+In addition to the visual clue (the lock) that the page you're currently 
+viewing allows secure transactions (or not), you can have &browser.name; 
+display a warning, in the form of a pop-up confirmation notice, before either
+or both of the following actions: 
+<ul>
+<li>Entering a secure site
+<li>Leaving a secure site
+</ul>
+<p>
+The default is to provide both warning messages.  
+<p>
+When entering a secure web site, the message displayed 
+isn't really a warning as much as it is a notice. That is, there is really 
+nothing to be worried about.  Even when leaving a secure site, think of the 
+warning as a notification just to keep you alerted to the status of
+pages you're viewing or sending data to.  You may decide to disable
+the warning notices altogether, in order to access pages more quickly and
+with fewer keystrokes.
+
+<p>
+&nbsp;<br>
+<a name=ciphers></a>
+<b>SSL Ciphers (Advanced Mode Only)</b>
+
+<p>
+When you access a secure web site, (a site whose address, or URL, starts with 
+"https://"), information 
+that passes to and from that web server is encrypted during transmission, so
+there is no risk of having a third site intercept and read that information.
+This is important, for example, when sending credit card numbers. 
+
+<p>
+Ciphers are algorithms that the are used to encrypt and decrypt this
+information. Ciphers with higher numbers are generally more secure than
+those with lower numbers.  
+
+<p>
+Use the SSL Ciphers scrolling list to tell &browser.name; which ciphers
+you'll accept when accessing secure web sites.
+
+<p>
+<hr>
+<a name="certificates"></a>
+<h2>Certificates (Advanced Mode and SSL Versions Only)</h2>
+
+<b>Note:</b> The Certificate options only appear on 
+the Security Preferences
+Page if you're using the Advanced Security Administration Mode.  Most of
+this documentation therefore assumes you are using the Advanced Mode. 
+However, if you are running in the Basic Security Mode, you may at times
+be presented with dialog boxes asking about certificates used by a page you 
+are trying to access.  Read this section if you'd like to learn more about 
+certificates even if you are not using the Advanced Security Administration 
+Mode.
+<p>
+<b>Note:</b> The Certificates options are also only 
+available in 
+versions of &browser.name; that support SSL (Secure Sockets Layer).  If these
+options don't appear on your Security Preferences dialog box in the list at the 
+left side, your version of &browser.name; does not support these features.  
+<p>
+
+Certificates are digital documents (also known as digital IDs) that are 
+used to attest to someone's identity over a network, much like a driver's 
+license is used to attest to the identity of someone who can legally drive.  
+<p>
+Certificates are issued by Certifying Authorities (also known as Certificate 
+Authorities, or simply authorities). These are trusted third parties, such as
+Verisign, Inc., that verify identities and issue certificates.  
+<p>
+There are three basic types of certificates that &browser.name; tracks: 
+certifying authority certificates, web site certificates, and software 
+publisher certificates.  
+
+<a name=ca.certs></a>
+<dl>
+<dt><b>Certifying Authority Certificates</b></dt>
+<dd>The Certifying Authority Certificates listed on the Security 
+Preferences dialog box are certificates issued by Certificate Authorities
+that &browser.name; recognizes and trusts.  &browser.name; is shipped with 
+a set of trusted Certifying Authority Certificates, which you can view or 
+remove.  If you have other certificates from Certifying Authorities you
+trust, you can also import those certificates.  Whenever you access a 
+secure web site or page with a Java applet whose certificate 
+was issued from one of the trusted Certifying Authorities on this list,
+you can view that page without notifications.
+
+<a name=website.certs></a>
+<p>
+<dt><b>Web Site Certificates</b></dt>
+<dd>When you access a <a href="#secure.web.sites">secure web 
+site</a>, (a site whose address, or URL, starts with "https://"), the server 
+where the web 
+site resides uses a certificate to encrypt and authenticate the connection.
+When you connect to a secure site, that site must present its certificate 
+as part of the encryption process.
+<p>
+If &browser.name; doesn't recognize the certificate or the certifying
+authority that issued the certificate, a dialog box gives 
+you the option to connect to the site anyway just for this session, 
+to connect and add the new certificate to the list of Web Site Certificates
+that &browser.name; always trusts, or not to connect.  If you're running in
+Basic Security Administration Mode, you'll be given the option to connect
+for this session only, or not to connect.
+
+<a name=software.certs></a>
+<p>
+<dt><b>Software Publisher Certificates</b></dt>
+<dd>
+When you access a page containing a signed Java applet, the signed applet 
+is accompanied by a certificate that identifies the applet signer and 
+prevents others from tampering with the applet. 
+
+<p>
+If you access a page with a signed applet whose certificate (or the certifying
+authority of the certificate) is not recognized, a dialog box gives you the 
+option to accept the certificate for this session only, to add the certificate 
+to the list of trusted Software Publisher Certificates, or not to run the 
+applet at all.  In Basic Security mode, you'll only have the option to trust 
+the certificate for this session, or not to connect.
+</dl>
+
+<p>
+&nbsp;<br>
+<b>Verifying Certificates</b>
+<p>
+When you encounter a new certificate from an unknown source, you should 
+verify that the certificate is valid. The certificates that
+are shipped with &browser.name; have already been verified.
+
+<a name=view.cert></a>
+<p>
+When you encounter a new certificate, the dialog box that asks if
+you want to trust the new certificate contains a View Certificate button.
+In addition, each list of known certificates on the Security Preferences
+Certificates panels contains a View Certificate button.
+
+<a name=verify.cert></a>
+<p>
+To verify a certificate, click the View Certificate button to see more
+information about the selected or recently encountered certificate. 
+The certificate's <b>Fingerprint</b> is a mathematical representation 
+of the certificate that is difficult to forge. If you confirm that the 
+sequence of numbers in the Fingerprint field matches the fingerprint given 
+to you from the certificate owner, you can be confident that the certificate 
+is valid. You need to contact the owner of the certificate (or the
+authority that issued the certificate) to verify the
+fingerprint. For maximum security, this confirmation should not happen
+using the Internet. Use the telephone, a fax machine, or regular mail.
+
+<p>
+<hr>
+<p>
+<p>
+
+
+<table>
+<tr>
+   <td width="170"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+
+<p>
+</body>
+</html>

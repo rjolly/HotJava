@@ -1,0 +1,30 @@
+<!-- @(#)charencode.directive.error.html	1.3 99/01/04 -->
+<html>
+<head>
+<title>Connection Error</title>
+<meta name=type content="hotjava/error">
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG SRC="../images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE="0" VSPACE="6"><br>
+
+<font color="666699" size="+3">Connection Error</font>
+
+<hr>
+
+Something went wrong while reading the document <a href="&url;">&url;</a>.
+It was probably caused by an incorrect Character Set, &incorrectCharset;,
+specified by the HTTP "content-type" header or the charset modifier in the 
+meta tag in the document.
+
+<dl>
+<dt>Exception: <b>&exception;</b>
+<dd>&message;
+</dl>
+Please select the <nobr><wbr>View->Ignore Charset Directive</nobr> option,
+and then select the required character set using the 
+<nobr><wbr>View->Character Set</nobr> menu.
+<hr>
+</body>
+</html>

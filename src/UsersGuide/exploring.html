@@ -1,0 +1,435 @@
+<html>
+<head>
+<title>Exploring the Web 
+</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE=
+"0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Exploring the Web with 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix;</font>
+
+<ul>
+<li> <a href="#navigating">Exploring the World Wide Web</a>
+	<ul>
+	<li> <a href="#buttons">Toolbar Navigation Buttons</a>
+	<li> <a href="#urls">Web Site Addresses (URLs)</a>
+	<li> <a href="#protocols">Supported Protocols</a>
+	<li> <a href="#hints">Helpful Hints and Shortcuts</a>
+	</ul>
+
+</ul>
+<p>
+<hr>
+<p>
+
+<h2><A name=navigating></a>Exploring the World Wide Web</h2>
+The World Wide Web is a vast collection of information stored on 
+computers located all around the world. People have created <i>web pages</i>
+that contain information on just about any topic you can imagine. 
+You can view these pages with 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix;.
+Web pages can consist of 
+text, images, audio files, movies, animation, and interactive computer 
+applications called Java<font size=-2><sup>TM</sup></font> applets. 
+<p>
+<a name=HTML><i>HTML</i></a>, which stands for HyperText Markup Language, is 
+the language used to create web pages. &browser.name; &release.version; supports 
+<a href="http://www.w3.org/pub/WWW/TR/REC-html32.html">HTML 3.2</a>, 
+plus many popular HTML extensions. 
+<p>
+If you would like to learn more about HTML, see 
+<a href="http://www.ncsa.uiuc.edu/General/Internet/WWW/HTMLPrimer.html">A 
+Beginner's Guide to HTML</a>, provided by the NCSA (National Center for 
+Supercomputing Application). 
+
+<p>
+<h3><A name=buttons></a>Toolbar Navigation Buttons</h3>
+The Toolbar buttons provide shortcuts for menu items, and most of them help
+you navigate around the Web. 
+<p>
+Follow the links below 
+for detailed information about each one, or see the 
+<a href="doc:/UsersGuide/getting_started/gs-nav.html">Getting Started Navigation Page</a> 
+for a summary of all the toolbar button functions.
+<p>
+<a name="BackButton"></a>
+<a name="ForwardButton"></a>
+<a name="HomeButton"></a>
+<a name="ReloadButton"></a>
+<a name="StopButton"></a>
+<a name="SearchButton"></a>
+<a name="PrintButton"></a>
+
+<table>
+<tr>
+  <td width="180">
+  <img src="doc:/lib/images/back.gif">&nbsp;<a href="menus.html#back">Back</a>&nbsp;&nbsp;
+  </td>
+
+  <td width="180">
+  <img src="doc:/lib/images/fwd.gif">&nbsp;<a href="menus.html#forward">Forward</a>&nbsp;&nbsp;
+  </td>
+
+  <td width="180">
+  <img src="doc:/lib/images/home.gif">&nbsp;<a href="menus.html#home">Home</a>&nbsp;&nbsp;
+  </td>
+</tr>
+
+<tr>
+  <td width="180">
+  <img src="doc:/lib/images/reload.gif">&nbsp;<a href="menus.html#reload">Reload</a>&nbsp;&nbsp; 
+  </td>
+
+  <td width="180">
+  <img src="doc:/lib/images/stop.gif">&nbsp;<a href="menus.html#stop">Stop</a>&nbsp;&nbsp; 
+  </td>
+
+  <td width="180">
+  <img src="doc:/lib/images/search.gif">&nbsp;<a href="menus.html#search">Search</a>&nbsp;&nbsp;
+  </td>
+</tr>
+
+<tr>
+  <td width="180">
+  <img src="doc:/lib/images/print.gif">&nbsp;<a href="menus.html#print">Print</a>&nbsp;&nbsp; 
+  </td>
+</tr>
+
+</table>
+
+<p>
+<a name=urls></a><h3>Web Site Addresses (URLs)</h3>
+You can visit web pages and other places on the Internet by
+following hypertext links on the current page or by typing in a
+specific address, or <i>URL</i>, in the Address field. URL (Uniform
+Resource Locator) is the Internet term for web site addresses that conform 
+to a specific format recognized by browsers.  
+(See <a href="http://www.ncsa.uiuc.edu/demoweb/url-primer.html">A 
+Beginner's Guide to URLs</a>, a document provided by the NCSA.)
+
+<p><a name="URLField"></a>
+
+To visit a place on the Web, click in the Address field, which is normally
+found in the header or footer of the &browser.name; window. 
+Then type the desired URL directly into the Address field and 
+press Return or Enter to display the specified web page. 
+<p>
+If you have chosen not to display the Address field in either the header or
+footer, choose <b>Open</b> from the File menu (or display a
+<nobr><wbr>pop-up</nobr> menu by clicking the right mouse button) to 
+display an Address field in a separate <nobr><wbr>pop-up</nobr> window. 
+
+<p>
+The first part of a URL (the part before the "<b>:</b>") is the 
+<i>Internet transfer protocol</i> of the page you are trying to access. 
+This indicates the page type and how the browser accesses the page.
+See the next section ("Supported Protocols") to find out about the 
+different types of URLs that you can use in &browser.name;. 
+
+<p>
+<a name=protocols></a><h3>Supported Protocols</h3>
+You can use &browser.name; to visit web pages, display documents, send 
+email, and browse GOPHER and FTP sites. &browser.name; supports these 
+major Internet transfer protocols:
+<dl>
+<dt> <b><a name="HttpProtocol">http</a></b>
+<dd> This stands for HyperText Transfer Protocol, the standard protocol 
+used to access pages on the Internet. 
+<p>
+To visit a web page, type: 
+<p>
+<kbd><b>http://<i>Internet-host</i>/<i>path-to-document</i></b</kbd>
+<p>
+in the Address field and press Return or Enter. 
+<p>
+You can omit the <kbd><b>http://</b></kbd>
+portion of the URL; &browser.name; will automatically add 
+it for you.  For example, these two URLs both take you to the 
+Java Software home page: 
+<ul>
+<li><kbd><b>http://www.javasoft.com</b></kbd> 
+<li><kbd><b>www.javasoft.com</b></kbd>
+</ul>
+<p>
+Furthermore, if the URL is a simple name 
+containing only letters, numbers, and hyphens (that is, a name that does not
+contain any periods, slashes, colons, and so on), &browser.name; adds 
+<kbd><b>www.</b></kbd> to the start of the name, and 
+<kbd><b>.com</b></kbd> to the end of the name. It then adds the
+<kbd><b>http://</b></kbd> to the front of the URL.  
+<p>
+For example, if you type
+<kbd><b>sun</b></kbd> in the Address field, this gets expanded first to
+<kbd><b>www.sun.com</b></kbd>, then to 
+<kbd><b>http://www.sun.com</b></kbd>, which saves you some typing. 
+<p>
+
+<dt> <b><a name="HttpsProtocol">https</a></b>
+<dd>This protocol works like the http protocol, except that it is used to 
+retrieve documents from a secure server. This means that documents passed 
+between your computer and the secure site are encrypted so that they cannot 
+be read by any other sites, and that no other computer can pretend to be
+the secure site.
+<p>
+<b>Note:</b> This protocol does not work in versions of 
+&browser.name; that do not support SSL (Secure Sockets Layer). 
+<p>
+The lock that appears at the left of the message area appears locked when
+you're connected to 
+a secure <nobr><wbr>(<b>https</b>)</nobr> 
+site: <img src="doc:/lib/images/lockOn.gif"> 
+<p>
+
+<dt> <b><a name="FileProtocol">file</a></b>
+<dd>Use this protocol to display a local file. You need to specify the 
+full path name of the file. You can omit the <kbd><b>file:</b></kbd> portion 
+of the URL. For example, both of these URLs display the same file:
+<ul>
+<li><kbd><b>file:/mydirectory/myfile.txt</b></kbd>
+<li><kbd><b>/mydirectory/myfile.txt</b></kbd>
+</ul>
+<a name="AsciiText"></a>
+<p>
+If you're loading an ASCII text file, the file must have one of the
+following extensions:
+<p>
+<kbd><b> .text  .txt  .java  .c  .cc  .c++  .h  .pl  .el
+</b></kbd>
+
+<dl>
+<dt><b>Note to Windows users</b>: 
+<dd>
+To access a file on your C (or other) drive, start your URL with the
+string <nobr><wbr><kbd><b>file:/c:/<i>yourfile</i></b></kbd></nobr>&nbsp; or
+&nbsp;<nobr><wbr><kbd><b>/c:/<i>yourfile</i></b></kbd>.</nobr>
+<br>
+If you want to list the contents of the C drive, use the URL
+<nobr><wbr><kbd><b>file:/c:/.</b></kbd></nobr>
+&nbsp; or &nbsp; 
+<nobr><wbr><kbd><b>/c:/.</b></kbd>.</nobr> 
+<p>
+If you type a URL that starts with "c:", you'll get an error message 
+instead of a file listing from drive C.  As described above, when a URL 
+starts with a simple text string before a colon, the string is considered 
+to be an Internet transfer protocol. Therefore, &browser.name; interprets
+a URL that starts with "c:" as if "c" is a protocol instead of a drive. 
+</dl>
+
+<dt> <b><a name="FtpProtocol">ftp</a></b>
+<dd> You can use &browser.name; to browse FTP (File Transfer Protocol) 
+sites. FTP sites are archives of files that you can download across the 
+Internet. If the name of your FTP site starts with "ftp.", you can omit
+the <kbd><b>ftp://</b></kbd> part of the URL; &browser.name; will automatically 
+add it for you.
+<p>
+When you specify an FTP URL, &browser.name; displays the directories
+and files at the FTP site. Click a directory to go there, or click
+a file you want to see. If &browser.name; recognizes the file type, it
+displays the file. If &browser.name; doesn't recognize the file type, it 
+displays a page you can use to save the file locally.
+
+<p>
+<dt><b><a name="GopherProtocol">gopher</a></b>
+<dd>Gopher servers are similar to FTP servers, in that they are archives of
+files. To visit a Gopher site, type in the full URL or, if the server 
+starts with "gopher.", you can omit the <kbd><b>gopher://</b></kbd> portion 
+of the URL.
+
+<p>
+<dt> <b><a name="MailtoProtocol">mailto</a></b>
+<dd>To send email from &browser.name;, type
+<nobr><wbr><kbd><b> mailto: <i>email-address </i></b></kbd></nobr> 
+in the Address field and press Return or Enter.  This displays the mail form
+in which you can compose your email message and send it. Alternatively,
+you can choose <b>Send Mail</b> from the File menu to access the 
+mail form.
+
+<p>
+<dt><b><a name="DocProtocol">doc</a></b>
+<dd>
+You may notice that sometimes the address for a page displayed by &browser.name;
+starts with <b><kbd>doc://</kbd></b>.
+<p>
+This is a protocol that &browser.name; uses to locate specific &browser.name;
+files. It is not recognized by other browsers, and is therefore not useful for 
+general web browsing.
+</dl>
+<p>
+
+<h3><A name=hints></a>Helpful Hints and Shortcuts</h3>
+<ul>
+<li>
+<a name=clone><b>To bring up any page in a separate &browser.name; 
+window</b>,</a> hold down the Shift key while:
+<p>
+<ul>
+<li>Clicking a link 
+<li>Choosing a bookmark from the Bookmarks menu
+<li>Double-clicking a bookmark in the Edit Bookmarks window
+</ul>
+<p>
+Holding down the Shift key tells &browser.name; to open a new &browser.name;
+window for the new page.  
+<p>
+You can also choose <b>New Window</b> from the File menu to
+create a new &browser.name; window displaying your home page.
+<p>
+Another way to open a new window is to press the right mouse button over a 
+link or image, then choose <b>Open this Link in New Window</b> or 
+<b>Open this Image in New Window</b> from the <nobr><wbr>pop-up</nobr> menu 
+that appears.
+<p>
+<b>Note:</b> The new &browser.name; window is part of the current &browser.name; 
+session,
+so it does not consume as many system resources as starting a new instance 
+of the &browser.name; application.  If you open one or more windows and 
+then change preferences in one window, the changes apply to all the 
+windows.
+<p>
+&nbsp;
+<br>
+
+<a name="StopFetching"></a>
+<li><b>To stop fetching a page</b>, you can either click the 
+Stop button <img src="doc:/lib/images/stop.gif">, choose <b>Stop Loading</b> 
+from the View menu, press the Escape key, or start loading another page.
+This stops the loading of all HTML pages and applets. It does <em>not</em> 
+stop applets that are already loaded from running; it only stops the loading 
+process. If &browser.name; is making a connection when you click the Stop 
+button or choose a new page, the connection attempt is completed before loading 
+stops.
+<p>
+&nbsp;
+<br>
+
+<a name="progress.monitor"></a>
+<li><b>To monitor the progress of a page being loaded</b>, watch the 
+icon in the upper right corner of &browser.name;. This icon animates when
+a page is being loaded. As long as the animation continues, the page is still 
+being loaded.
+<p>
+<img src="doc:/lib/images/fdbk-rest.gif"> - Means &browser.name; is 
+<i>not</i> loading a page over the network.
+<p>
+<img src="doc:/lib/images/fdbk-anim.gif"> - Means &browser.name; <i>is</i> 
+loading a page over the network.
+<p>
+&nbsp;
+<br>
+
+<a name="BrokenIcons"></a>
+<li><b>If an image or applet can't be loaded</b>, you'll see a broken
+image or applet icon in its place: <br>
+<img src="doc:/lib/images/image-failed.gif"> for a broken image, and
+<img src="doc:/lib/images/applet-failed.gif"> for a broken applet.
+<p>
+<a name="ExceptionTrace"></a>
+Applet developers: Click the broken applet icon to
+see an exception trace to help track down the problem.
+<p>
+&nbsp;
+<br>
+
+<a name="SaveImage"></a>
+<li><b>To save an image or link</b> displayed on the current page, press the right
+mouse button over the image or link, then choose <b>Save this Image as</b>
+or <b>Save this Link as</b> from the <nobr><wbr>pop-up</nobr> menu. 
+<p>
+&nbsp;
+<br>
+
+<a name="ResizeFrames"></a>
+<li>
+<b>Frames</b> are an HTML feature used to divide a page into multiple regions. 
+If a frame (region) can't be completely displayed in its current allocated area,
+that frame will have one or two scrollbars that you can use to see the 
+contents of the entire frame. 
+An example of a page with frames is the <a href="UGindex.html">User's 
+Guide Index</a>, which has two frames -- one small frame at the top, and 
+one large frame at the bottom.
+<p>
+<b>To resize the areas of a page divided into frames</b>, position
+your pointer on the edge of a frame (where it borders another frame), press
+your mouse button, and drag the pointer.  You'll see a line indicating 
+what the new size of the frame will be as you move the pointer.  Release your 
+mouse button when the frame is the desired size. You may have to try a couple
+of times at first to successfully find the edge of the frame, but this will 
+become easier after the first try or two. 
+<p>
+&nbsp;
+<br>
+
+<a name="MinimizeTyping"></a>
+<li><b>To minimize typing in the Address field</b>, you can 
+usually skip typing the protocol portion of the URL. 
+In addition, if the name of your URL is in the form 
+<kbd><b>http://www.simplename.com</b></kbd>, you can just type
+<kbd><b>simplename</b></kbd> in the Address field. &browser.name; fills out the
+rest of the URL for you. See 
+<a href="#protocols">Supported Protocols</a> for details.
+<p>
+&nbsp;
+<br>
+
+<a name="ArrowKeys"></a>
+<li><b>As a shortcut to using the scrollbars</b>, you can use your
+keyboard up and down arrow keys to move in scroll increments, the PgUp and 
+PgDn keys to scroll a page at a time, or the Home and End keys to go to the 
+top and bottom of a page.
+<p>
+&nbsp;
+<br>
+
+<a name="KeyboardAccel"></a>
+<li><b>As a shortcut to choosing items from the menus</b>, use the keyboard 
+accelerators defined to the right of the menu item. For example, type
+Control-p to display the print dialog box. The mouse must be located in the 
+window containing the menu for the accelerator to work.  For example, typing 
+Control-n opens a new &browser.name; window if the mouse is in the main 
+&browser.name; window; it displays the Add New Folder dialog box if the 
+mouse is in the Bookmarks window.
+<p>
+&nbsp;
+<br>
+
+<a name="CommandMenu"></a>
+<li><b>As an alternate shortcut to choosing some items from the menus at the top of 
+the browser</b>, use the &browser.name Commands
+pop-up menu. Display this menu by pressing the right mouse button with the
+pointer anywhere in the page display area.  If the pointer
+is over a link or image, the Commands menu will contain options to save or open
+that link or image.  In all cases, it will contain 
+<a href="menus.html#back">Back</a>, <a href="menus.html#forward">Forward</a>, 
+<a href="menus.html#goto_place">Open</a>, and 
+<a href="menus.html#html.source">View Page Source</a> options.
+
+</ul>
+
+<p>
+<p>
+<hr>
+<p>
+
+<table>
+<tr>
+   <td width="200"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+<p>
+<a href="Legal_PRN.html"><font size=-2>Copyright &copy; Sun Microsystems, 
+Inc.</font></a>
+
+<p>
+</body>
+</html>

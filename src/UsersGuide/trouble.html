@@ -1,0 +1,231 @@
+<html>
+<head>
+<title>Troubleshooting
+</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE=
+"0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Troubleshooting</font>
+<p>
+
+<a name="Trouble"></a>
+Look here for answers to questions about problems you may have. 
+
+<ul>
+<li><a href="#access">Why can't I access web sites outside my company 
+network?</a>
+<p>
+<li><a href="#website">Why do http and ftp requests to certain web sites
+sometimes fail?</a>
+<p>
+<li><a href="#gray">Why are some menu entries in 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix; 
+dimmed (and unusable)?</a>
+<p>
+<li><a href="#launch">When I download a file of a certain type, &browser.name; 
+displays a page that says "Unable to Launch Viewer."  What can I 
+do?</a>
+<p>
+<li><a href="#long.lines">I'm viewing an HTML page that has very long lines 
+that are cut off before the end of the line. What's happening?</a>
+<p>
+<li><a href="#cdrive">When I type a web site address (or <i>URL</i>) that 
+starts with "c<b>:</b>" I get an error message. Why doesn't &browser.name; 
+recognize this as drive C?</a>
+<p>
+<li><a href="#ftp.protocol">Why does &browser.name; map the URL 
+"file://filename" to an ftp protocol?</a>
+<p>
+<li><a href="#firewall">&browser.name; lets me use an IP address in a 
+URL within my firewall, but not in a URL outside the firewall. Why?</a>
+<p>
+<li><a href="#ISINDEX">I'm looking at a page that tells me to use my 
+browser's search function to enter search terms.  What does this mean?</a>
+<p>
+<li><a href="#memory">Some of &browser.name;'s features quit working or
+were disabled.  What happened?</a>
+</ul>
+
+
+<dl>
+<dt><b><a name="access">Why can't I access web sites outside my company 
+network?</a></b>
+<dd>
+Your company network firewall could be preventing you from making connections, 
+especially if you haven't configured your proxy servers.
+Choose General Preferences from the Edit menu, then select Proxies from the
+list on the left side of the General Preferences dialog box.  Contact
+your system administrator for the proxy information specific to your site.
+<p>
+Do not fill out the SOCKS fields on the Proxies panel if you do not have a 
+SOCKS server, or &browser.name; won't be able to connect outside your firewall.
+<p>
+For more information, see <a href="proxies.html">&browser.name; Proxies</a>.
+<p>
+
+<dt><b><a name="website">Why do http and ftp requests to certain web sites
+sometimes fail?</a></b>
+<dd>
+Due to heavy demand at very popular web sites, a server
+may be overloaded and can turn away requests. If you run into this problem, 
+try accessing the site again later.
+<p>
+
+<dt><b><a name="gray">Why are some menu entries in &browser.name; dimmed 
+(and unusable)?</a></b>
+<dd>
+Dimmed menu items indicate that the menu item is not available 
+because of the current state of the browser. For example, the Stop Loading
+menu item is not available when nothing is currently being loaded. Also,
+if your system is running very low on memory, some items may be disabled
+temporarily.
+<p>
+
+<dt><b><a name="launch">When I download a file of a certain type, &browser.name; 
+displays a page that says "Unable to Launch Viewer."  What can I 
+do?</a></b>
+<dd>
+On network computers, such as the JavaStation<font size=-2><sup>TM</sup></font> 
+platform, you may not have the capability to launch external applications.
+<p>
+On other platforms, such as the Solaris<font size=-2><sup>TM</sup></font> 
+platform, a frequent cause of this 
+problem is not setting the exec.path property in your personal properties 
+file.  The exec.path property is a list of full directory names on your 
+machine where &browser.name; should look for executable external viewer 
+applications.  
+<p>
+See <a href="viewer_execpath.html">Setting the exec.path Property</a> for information.
+<p>
+
+<dt><b><a name="long.lines">I'm viewing an HTML page that has very long lines 
+that are cut off before the end of the line. What's happening?</a></b>
+<dd>
+The text of most HTML pages automatically reformats itself to fit the size of
+your &browser.name; window. However, HTML text that appears under the 
+&lt;PRE&gt; tag (meaning "preformatted") is not reformatted to fit the width 
+of the browser. You can almost always scroll horizontally to see an entire 
+line of preformatted text if it extends off the page. However, if a line of 
+preformatted text exceeds 1024 characters, the line is truncated. 
+&browser.name; sets the maximum possible number of displayed characters at 
+1024 characters.
+<p>
+
+<dt><b><a name="cdrive">When I type a web site address (or <i>URL</i>) that 
+starts with "c:" on a Windows platform, I get an 
+error message. Why doesn't &browser.name; recognize this as drive C?</a></b>
+<dd>
+When a <a href="exploring.html#urls">URL</a> starts with a simple text 
+string before a colon, the string is considered to be an Internet Transfer 
+Protocol. This is the standard syntax for URLs. 
+<p>
+To access a file on your C drive, start your URL with the
+string <nobr><wbr><tt>/c<b>:</b>/<i>yourfile</i></tt></nobr> or 
+<nobr><wbr><tt>file<b>:</b>/c<b>:</b>/<i>yourfile</i></tt>.</nobr> 
+If you want to list the contents of the C drive, use the URL
+<nobr><wbr><tt>/c<b>:</b>/<b>.</b></tt></nobr> or 
+<nobr><wbr><tt>file<b>:</b>/c<b>:</b>/<b>.</b></tt>.</nobr>
+Starting a URL with "/" or "file<b>:</b>/" indicates that you want to use 
+the file protocol to access your C drive. 
+<p>
+
+<dt><b><a name=ftp.protocol>Why does &browser.name; map the URL 
+"file://filename" to an ftp protocol?</a></b>
+<dd>
+URL conventions specify that whatever follows two slashes (//) is 
+an Internet host computer, or a <i>Web server</i>, that makes files 
+available to the World Wide Web. The file protocol only 
+understands local files, not remote servers, so browsers routinely 
+map such a URL to an ftp protocol. Therefore, a URL of the form 
+"file://filename" is interpreted as "ftp://filename/". 
+<p>
+
+<dt><b><a name="firewall">&browser.name; lets me use an IP address in a 
+URL within my firewall, but not in a URL outside the firewall. Why?</a></b> 
+<dd>
+This is a known problem with some proxies, not a bug in &browser.name;. Try
+using a different proxy server.
+<p>
+
+<dt><b><a name=ISINDEX>I'm looking at a page that tells me to use my 
+browser's search function to enter search terms.  What does this mean?</a></b>
+<dd>You'll see this message when the current HTML document is a 
+<em>searchable index</em> (that is, when it includes the ISINDEX HTML tag 
+in the document head). 
+Below this message you should see a text field with a label telling you
+to enter your search keywords. This is what the page is referring to as
+"your browser's search function."
+<p>
+Use this text field to request a keyword search. Type the keyword you 
+wish to search for, or a space-separated list of keywords, and press Return 
+or Enter. &browser.name; then passes this search information to the 
+document's server, which performs the search.
+<p>
+The difference between <nobr><wbr>Edit->Find in Page</nobr> searches 
+and ISINDEX searches is that Find in Page signals &browser.name; 
+to search the currently displayed page, while ISINDEX searches ask the 
+current document's server to search a database that the server maintains. 
+What is returned by an ISINDEX search depends on how the server displays 
+the results.
+
+<p>
+<dt><b><a name=memory>Some of &browser.name;'s features quit working or
+were disabled.  What happened?</a></b>
+<dd>
+If you're running &browser.name; on a system with low memory constraints,
+&browser.name; may be running out of memory.
+<p>
+When &browser.name; gets close to reaching its memory limit, it
+becomes aggressive in its attempts to free up memory. 
+The actions that &browser.name; takes to free up memory in extreme 
+conditions may include the following:
+<ul>
+<li>All applet and image loading is automatically delayed until a sufficient
+amount of memory is once again available. See 
+<a href="display_prefs.html#delay.applets">Automatically Load Java
+Applets</a> and <a href="display_prefs.html#delay.images">Automatically  
+Load Images</a> for more information.
+<p>
+<li>The Address field is disabled until there is sufficient memory to
+display a new, potentially memory-intensive page. Similarly, the New Window, 
+Open, and Edit Bookmarks menu items are also temporarily disabled.
+The toolbar buttons and Bookmarks menu list are kept active. If you can
+use these to move to a smaller page, you should do so.
+<p>
+<li>&browser.name; attempts to close any other &browser.name; windows you may 
+have open, after asking you for permission to close each one.
+</ul>
+<p>
+<b>Note:</b> The user-visible actions to clear memory are only likely to
+happen on systems with very low memory resources.
+
+</dl>
+
+<hr>
+<p>
+<p>
+
+<table>
+<tr>
+   <td width="170"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+<p>
+
+</body>
+</html>

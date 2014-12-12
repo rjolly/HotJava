@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Setting Proxy Preferences</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE=
+"0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Setting Proxy Preferences</font>
+<p>
+
+If you're running 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix; 
+in a networked environment and you're 
+having trouble accessing Web pages, you might need to set proxy servers to 
+enable access outside of your company network.  Proxies are the servers, or
+gateways, for Internet access through your network firewall.  
+
+<p>
+Your system administrator may have already set up &browser.name; to
+use proxies that are appropriate for your site.  If not, you can specify
+proxy servers using the Proxy Preferences options.  
+
+<p>
+Although this is a somewhat advanced preference option, setting your 
+proxies appropriately is necessary if you want to be able to access
+sites outside of your company network. You may need to ask your system 
+administrator for help with filling out the proxy preferences.  
+
+<p>
+<h2><a name="proxies">To Set Proxies</a></h2>
+To access the Proxy Preferences, choose 
+<nobr><wbr>Edit->General Preferences</nobr>.  On the General Preferences 
+dialog box, select Proxies from the list on the left side.
+
+<p>
+When you type in a Web site address, the first part of the address
+(the part before the "<b>:</b>", such as "http") is the
+<i>Internet transfer protocol</i> of the page you are trying to access.
+This indicates the page type and how the browser accesses the page.
+Each type of protocol may use a different proxy server and port.  The
+port is the "channel" the proxy server uses to listen for particular
+types of communication requests.
+
+<p>
+&browser.name; supports the following protocols for which you may need to 
+set proxies and ports.  
+<ul>
+<li>HTTP
+<li>Security (HTTPS)
+<li>FTP
+<li>Gopher
+</ul>
+
+<p>
+In addition to the protocols listed, you can also set a SOCKS proxy and port. 
+SOCKS is another kind of server that allows access across a network 
+firewall.  Ask your system administrator if you should be using SOCKS 
+or the other proxy servers, or both, and the name and port of the appropriate 
+servers. 
+<p>
+<b>Note:</b> Do not put values in the SOCKS field if you do not have a 
+SOCKS server.  Doing so will prevent you from viewing pages outside your
+company firewall, even if you have correct values in the protocol proxy
+fields.
+
+<p>
+If you have specified proxies but you want to ignore the proxies when 
+connecting
+to particular hosts, such as those within your firewall, type the full host 
+names in the <b>Bypass Proxies</b> text field. Full host names are in the form 
+<tt>host.domain.</tt>
+For example, type <tt>server.mycompany.com </tt>to connect directly
+with the host <tt>server </tt>in the domain <tt>mycompany.com.</tt> 
+Separate multiple names with spaces or carriage returns.
+
+<p>
+You can also specify that you want to bypass proxies for an entire domain 
+by typing the domain name, starting with a period, in the Bypass Proxies 
+field.
+For example, type <nobr><wbr><tt><b>.</b>mycompany.com </tt></nobr>to 
+bypass proxies for <i>all</i> hosts
+in the <tt>mycompany.com </tt>domain.
+
+<p>
+<hr>
+<p>
+In addition to the proxy settings, you can use Preferences pages to 
+customize several other aspects of &browser.name;.  Follow these links for 
+detailed information in the User's Guide about each of the possible Preferences
+pages:
+<ul>
+<li><a href="doc:/UsersGuide/display_prefs.html">Display Preferences</a>
+<li><a href="doc:/UsersGuide/text_prefs.html">Text Preferences</a>
+<li><a href="doc:/UsersGuide/clock_prefs.html">Clock Preferences</a>
+<li><a href="doc:/UsersGuide/mail_prefs.html">Mail Preferences</a>
+<li><a href="doc:/UsersGuide/proxies.html">Proxy Preferences</a>
+<li><a href="doc:/UsersGuide/security.html">Security Preferences</a>
+</ul>
+
+<p>
+On some platforms, you may also see:
+<ul>
+<li><a href="doc:/UsersGuide/viewer_apps.html">Content Viewer Preferences</a>
+</ul>
+
+<p>
+<hr> 
+<br>&nbsp;
+<br>&nbsp;
+Other <a href="getstart.html">Getting Started</a> topics:
+<ul>   
+<li> <a href="gs-openurl.html">Opening a Web Page</a>
+<li> <a href="gs-nav.html">Navigating the Web</a>
+<li> <a href="gs-hotlist.html">Creating a Bookmark List</a>
+</ul>
+
+<p>
+<font size=-2><a href="doc:/UsersGuide/Legal_PRN.html">Copyright &copy; Sun 
+Microsystems, Inc.</a></font>
+<p>
+
+</body>
+</html>

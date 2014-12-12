@@ -1,0 +1,34 @@
+<!-- @(#)memory.html	1.5 99/02/08 -->
+<html>
+<head>
+<title>Memory Statistics</title>
+<meta name=type content="hotjava/utility">
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG SRC="../images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE="0" VSPACE="6"><br>
+
+<font color="666699" size="+3">Memory Statistics</font>
+
+<p>
+<applet code=sunw.hotjava.applets.MemoryApplet width=250 height=30>
+<param name=delay value="2000">
+<param name=total value="Total">
+<param name=free value="Free">
+</applet>
+<applet code=sunw.hotjava.applets.MemoryBarApplet width=300 height=30>
+<param name=delay value="2000">
+</applet>
+<p>
+
+In the bar graph above, the red area represents the memory currently
+used and the green area represents the memory available. The number
+shown is the percentage of memory currently used.
+<p>
+The memory used by &browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix; needs to be cleaned up occasionally. 
+Garbage collection to free up memory is done automatically as needed.
+<p>
+
+</body>
+</html>

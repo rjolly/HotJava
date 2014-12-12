@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>Display Preferences 
+</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE="0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Display Preferences</font>
+<p>
+
+Use the <b><a name="DisplayPrefs">Display Preferences</a></b> to: 
+<ul>
+<li>Specify the contents of your home page and startup page
+<li>Change the location and appearance of 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix; 
+buttons and fields
+<li>Specify whether to automatically display images, animations, and 
+Java<font size=-2><sup>TM</sup></font> applets
+</ul>
+<p>
+Access the Display Preferences by selecting 
+<nobr><wbr>Edit->General Preferences</nobr>.  By default, the Display
+Preferences panel is automatically shown on the General Preferences dialog box.
+
+<p>
+<a name=home.page></a>
+When &browser.name; is started, and when you click the Home button, your 
+&browser.name; <b>Home Page</b> is displayed. To change this home page, 
+type a new <a href="exploring.html#urls">address</a> in the Home Page 
+Address field. 
+
+<p>
+<a name="BlankPage"></a>
+By default, your Home Page is the first page that &browser.name; displays
+when it starts.
+For performance reasons, you can choose to have &browser.name; display 
+a blank page at startup by choosing <b>Blank Page</b>
+as the <b>Browser Starts At</b> option.  
+&browser.name; will still display the Home Page whenever you click 
+the Home button. 
+
+<p>
+<b><a name="ButtonAppearance">Show Toolbar Buttons As</a></b> allows you 
+to customize the content of the toolbar buttons.  By default, the 
+buttons contain both images and text, but you can choose to have them 
+only display one or the other if you prefer to have smaller buttons.
+
+<p>
+The <a name="ScreenLayout"><b>Screen Layout</b></a> options allow you to 
+customize the location of the buttons, Address field, and status bar.
+<ul>
+<li>
+Use the <b><a name="NavButtons">Buttons</a></b> pulldown menu choices 
+to display the buttons at the top (the default), bottom, left, or right 
+of the browser window, or not at all. If you don't display the buttons, 
+you can still use menu items to perform all of the button functions.
+<p>
+<li>
+The <b><a name="Locator">Address</a></b> field is where you type the address 
+(also known as the URL) of a place you want to visit.  Use the Address pulldown 
+menu to place the Address field at the top or bottom of the window. You can 
+also choose None if you don't want to display the address field in the window. 
+You can still display an Address field in a separate <nobr><wbr>pop-up</nobr>
+window by choosing either <nobr><wbr>File->Open</nobr> or Open from the right
+mouse button pop-up menu.
+<p>
+<li>
+The <b><a name="StatusBar">Status Bar</a></b> is the area where all the 
+&browser.name; status and error messages are displayed. To the left of the
+status bar is the <a href="security.html#lock">lock</a>, indicating whether 
+the current page has been loaded using the secure https protocol.  To the 
+right of the status bar is a clock (unless you have chosen not to display 
+the clock in <a href="clock_prefs.html">Clock Preferences</a>).
+<p>
+By default, the Status Bar appears in the footer. 
+You can choose to move the Status Bar to the header, or not display it at all.
+</ul>
+
+<p>
+<a name=PlayGif></a>
+Deselect the <b>Play GIF Animations</b> option if you want to disable 
+&browser.name; from playing GIF animations on displayed pages in order to
+improve loading and scrolling performance, or if you find the animation of 
+a particular image annoying.  
+<p>
+Animated GIF images are images that change their appearance in a continuous 
+cycle.  
+<p>
+For example, this is an animated GIF image: <img src="anim.gif"> 
+<p>
+The Play GIF Animations setting will only affect animations
+on pages (such as the animated image above).  The
+animation in the upper right corner of the browser that indicates when a page
+is being loaded is <i>not</i> affected by this setting. 
+
+<p>
+Use the <b><a name="ConfirmQuit">Confirm on Exit</a></b> option to specify whether
+you would like &browser.name; to display a confirmation notice when you choose
+<nobr><wbr>File->Exit</nobr> on the only open &browser.name; window.  
+This gives you a chance to verify that you really want 
+to exit the application.  The default is to display the confirmation notice.
+
+<p>
+&nbsp;<br>
+Deselect the <b><a name=delay.images>Automatically Load Images</a></b>
+option if you don't want to automatically load all images on pages when they
+are loaded. Choose this option to improve the loading time of pages with a 
+lot of images, or pages with images you're not interested in seeing.
+<p>
+When Automatically Load Images is <i>not</i> selected, you'll see the following 
+icon in place of every unloaded image:
+<p>
+<a name="UnloadedImage"><img src="doc:/lib/images/image-delayed.gif"> Unloaded 
+Image icon</a>
+<p>
+The size of the panel containing this icon shows how large the image will be
+when it's loaded.  Click the icon when you want to load the image.
+<p>
+If the author of the page specified alternative text for the unloaded image
+(using the ALT tag), that text will be displayed next to the Unloaded Image
+icon. This can help you identify whether you want to load the image.
+<p>
+If Automatically Load Images is not selected and you'd like to load all the
+images on the current page, select the Automatically Load Images 
+option, click OK, and <a href="menus.html#reload">reload</a> the page.
+The images will not be loaded until the page is reloaded.
+<p>
+Note that you may see the Unloaded Image icon if &browser.name; times out
+when loading an image, even if the Automatically Load Images option is 
+selected. Click the Unloaded Image icon to restart image loading.
+
+<p>
+&nbsp;<br>
+Deselect the <b><a name=delay.applets>Automatically Load Java Applets</a></b>
+option if you don't want &browser.name; to automatically
+load all applets on a page as it loads the page. You might choose this option
+to improve the loading time of a page with a lot of applets, or a page
+with an applet you're not interested in seeing.
+<p>
+When Automatically Load Java Applets is <i>not</i> selected, you'll see the 
+following icon in place of an unloaded applet:
+<p>
+<a name="UnloadedApplet"><img src="doc:/lib/images/applet-delayed.gif"> Unloaded
+Applet icon</a>
+<p>
+The size of the panel containing the icon shows how large the applet will be
+when it's loaded.
+Click the icon when you want to load the applet. Watch the message area
+to see the progress of the applet loading.
+<p>
+If the Automatically Load Java Applets option is not selected and you'd like 
+to load all the applets on the current page at once, select the Automatically 
+Load Java Applets option, click OK, and then 
+<a href="menus.html#reload">reload</a> the page.
+
+<p>
+&nbsp;<br>
+<a name=show_bookmarks></a>
+Use the <b>Show Personal Bookmarks in Bookmarks Menu</b> option to control
+the contents of the <a href="menus.html#bookmarks_menu">Bookmarks</a> menu.  
+By default, all the bookmarks in your Personal Bookmarks list are listed
+at the end of the menu, (after Go to Bookmark).  If this makes your Bookmarks
+menu too long or cumbersome, you can deselect the Show Personal Bookmarks
+in Bookmarks Menu option.  The Bookmarks menu then will only contain the top 
+four standard menu items, ending with Go to Bookmark.  You can still access 
+your Personal Bookmarks list by using the Edit Bookmarks window, or using the 
+File Bookmarks and Go to Bookmarks submenus.
+
+<p>
+<hr>
+<p>
+<p>
+
+<table>
+<tr>
+   <td width="170"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+<p>
+
+</body>
+</html>

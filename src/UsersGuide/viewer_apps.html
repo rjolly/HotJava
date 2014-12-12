@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>Content Viewer Preferences
+</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE=
+"0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Content Viewer Preferences</font>
+<p>
+
+<a name="ViewerAppsPrefs"></a>
+<b>Note:</b> The Content Viewers feature is not available on all platforms.
+If the <nobr><wbr>Edit->Content</nobr> Viewer Preferences option is 
+missing, (for example, if you are running 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix; on the 
+JavaStation<font size=-2><sup>TM</sup></font> platform), the information on
+this page does not apply to your browser.
+<p>
+There are a multitude of file types on the World Wide Web. When 
+&browser.name; encounters a file that it can't display in a web page, it 
+looks in a table of <i>Content Types</i> to find out how to display the
+file based on its type. For example, when it encounters an audio file, it 
+launches the appropriate audio player.
+<p>
+The information you set on the Content Viewer Preferences page tells 
+&browser.name; to do one of the following things when it encounters a file of
+a specific type:
+<ul>
+<li>Display the file within &browser.name
+<li>Launch an external application to display the file
+<li>Save the file to your local system
+<li>Display a page to ask you what to do with the file
+</ul>
+
+<p>
+<a name="MimeType"></a>
+&browser.name; determines the type of a file by referencing its 
+<b>MIME</b> (Multipurpose Internet Mail Extensions) type, which is sent to the 
+browser from the http server along with the file. This tells &browser.name; the 
+general type of file (text, audio, image, video, application, message, or 
+multipart), and a more specific subtype (PostScript, TIFF, ZIP compressed data, 
+and so on). 
+<p>
+If a file's MIME type is not available (for example, if the file is loaded
+with a non-http protocol, such as the ftp or file protocol), 
+&browser.name; uses the file's <b>extension</b> to map the file to a MIME type. The
+file extension is simply the last letters of the file name, which appear 
+after a period. For example, a file named "myfile.txt" has ".txt" as its
+file extension, and maps to the text/plain MIME type.
+<p>
+<a name=action></a>
+&browser.name; uses a table of content-type definitions, found on the 
+<nobr><wbr>Edit->Content</nobr> Viewer Preferences page, to map content types 
+(determined by MIME type or file extension) to applications. 
+The <b>Action</b> listed for each content type tells &browser.name; to 
+do one of the following to display a file of that type: 
+<ol>
+<li><a name="DisplayinHJB">Display the file within &browser.name;</a> 
+(typically HTML, ASCII text, GIF images, and JPEG files). If &browser.name; doesn't 
+have a content handler to display this type of file, it tries to display the 
+file verbatim, that is, without special handling. 
+<p>
+<li><a name="LaunchApp">Launch an external application</a> to display the file (see the Note below).
+<p>
+<li><a name="SaveFile">Save the file</a> to your local system.
+<p>
+<li><a name="Ask">Display a page to ask you</a> what to do with the file.
+</ol>
+
+<p>
+<b>Note:</b> You <em>must</em> tell &browser.name; where on your system to find
+your external applications by setting the <b>exec.path</b> property 
+in your &browser.name; properties file. See 
+<a href="viewer_execpath.html">Setting the exec.path Property</a> for information. 
+
+<p>
+<a name=file.types></a>
+To see how &browser.name; currently handles files of a particular type, select the
+type from the <b>Content Types</b> scrolling list. You can modify the following
+information for that content type by updating the fields to the right of the
+Content Types scrolling list, and clicking OK:
+
+<ul>
+<li><b>Description</b> is what will appear in the Content Types scrolling list when 
+the new type is added.  Use any description that's meaningful to you.
+<p>
+<li><b>Extensions</b> are the file extensions that files of this type are typically 
+identified by (if the file's MIME type is not available). You should separate 
+multiple file extensions by commas. 
+<p>
+<li><b>Action</b> tells &browser.name; what to do with files of this type. 
+There are four choices, as listed above.
+<p>
+<li><b>Application</b> is used whenever the Action is View in Application.
+This is the external viewer that &browser.name; will invoke to view the
+file. 
+</ul>
+
+<p>
+For example, suppose you want to add a new file extension (.abc) to the 
+list of Plain Text file extensions, so files with that extension will be 
+treated as plain ASCII text. You can do this by selecting the Plain Text 
+Content Type, adding ".abc" to the Extensions field, and clicking OK. 
+Remember, however, that &browser.name; <i>first</i> looks to the file's
+MIME type, not its extension. Thus, if a file with the new extension is 
+sent from an http server to &browser.name; along with a MIME type, 
+the file's extension will be ignored.
+
+<p>
+<a name="ContentType"></a>
+<b>To add a new Content Type</b>, follow the steps below. These steps show 
+an example of how you would add support for a type of images called 
+raster images, using a viewer application called imagetool. You can use 
+these steps to add support for any other file type and/or viewer application.
+<ol>
+<li>On the Content Viewer Preferences page, click <b>New</b>. 
+<br>
+This activates the MIME type fields at the right side of the page. Be sure 
+to fill out these MIME type fields (Type and Subtype), as well as
+the other fields to the right of the Content Types scrolling list. 
+<p>
+<li>Type a description of the content type in the <b>Description</b> field.
+This is what will appear in the Content Types scrolling list when the new
+type is added. 
+<br>
+For the raster file example, you might type <kbd>Raster File</kbd> in the 
+Description field.
+<p>
+<li>Type the file <b>Extensions</b> that are usually in the names of files of 
+this type. You should separate multiple file extensions by commas. 
+<br>
+For the raster file example, this might be <kbd><b>.</b>ras, <b>.</b>rs</kbd>.
+<p>
+<li>Select an <b>Action</b>. For this example, you would choose 
+View in Application.
+<p>
+<li>If you chose View in Application, the <b>Application</b> type-in field
+is activated. Type the name of the application, or click on the Choose
+button to choose an application from your file system. 
+<br>For the raster file example, you would type &nbsp;<kbd>imagetool</kbd>.
+<p>
+<b>Note:</b> If you type an application without the full path name where
+the application is located on your file system, you <i>must</i> make sure
+the exec.path property is set. (See <a href="viewer_execpath.html">Setting the 
+exec.path Property</a>.) If you click Choose to select an application, the 
+full path name is entered into the Application field, so you don't need to 
+be concerned about the exec.path property for <i>this</i> particular 
+application.
+<p>
+<li>Select the MIME <b>Type</b> for your new content type. Your choices are
+Application, Audio, Image, Message, Multipart, Text, or Video.  For this 
+example, choose Image.
+<p>
+<li>Select a MIME <b>Subtype</b> from the Subtype scrolling list, or type 
+a description of the new content type after <b>x-</b> in the Subtype 
+field. The scrolling list shows all the known subtypes for the specified
+type. If none of the known subtypes is appropriate, type a description after
+the x-. 
+<br>
+For the raster file example, you might type <kbd>x-rasterfile</kbd>.
+<p>
+<b>Note:</b> If you select a MIME Type/Subtype combination that is already
+defined, your new definition (description, extensions, action, and 
+application) will override the previous definition. 
+<p>
+<li>Click the <b>OK</b> button to activate your new Content Type. 
+<p>
+You should
+see your new definition in the Content Types scrolling list, and you can now
+access files of that type using the action you specified.
+<p>
+If your Action was <b>View in Application</b>, you'll notice that 
+&browser.name; appends <b>%s</b> at the end of the Application definition 
+when you click OK. 
+It uses the %s later to substitute the actual file being opened.
+</ol>
+
+<p>
+In some circumstances, &browser.name; creates temporary files to 
+display content within the browser or to launch external applications. 
+See <a href="viewer_tempfiles.html">Temporary Files for Content Viewer 
+Applications</a>
+for information about the location of these files, and how you can control
+whether some of these files are automatically deleted.
+
+<p>
+<hr>
+<p>
+<p>
+
+<table>
+<tr>
+   <td width="170"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+<p>
+
+</body>
+</html>

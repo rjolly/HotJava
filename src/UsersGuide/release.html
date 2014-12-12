@@ -1,0 +1,435 @@
+<!-- @(#)release.html	1.15 99/01/11 -->
+<html>
+<head>
+<title>Release Notes</title>
+</head>
+<body bgcolor="#ffffff">
+<IMG SRC="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE="0" VSPACE="6"><br>
+
+<font color="666699" size="+3">&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix; Version &browser.version;</font>
+
+<br>
+<i>Using Java<font size=-2><sup>TM</sup></font> runtime environment version 
+&java.version;</i>
+
+<p>
+&nbsp;<br>
+Look here for the following information about the current release of
+&browser.name;:  
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#changes">Changes Since Last Release</a>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#bugs">Known Bugs</a>
+
+<p>
+&nbsp;<br>
+&browser.name; &release.version; has been qualified on 
+JavaOS<font size=-2><sup>TM</sup></font> 1.1 
+and Solaris<font size=-2><sup>TM</sup></font> 2.6 operating systems,
+running on SPARC<font size=-2><sup>TM</sup></font>-based platforms. 
+<p>
+<a name=changes></a>
+<h2>Changes Since Last Release</h2>
+&browser.name; &release.version; is a major update from 
+HotJava Browser 1.1.5. The version number 3.0 indicates that
+this product has comparable HTML support as other popular 3.0
+browsers.
+
+<p>
+Changes of particular significance are:
+
+<ul>
+<li>
+The JavaScript<font size=-2><sup>TM</sup></font> language is now supported. 
+<a href="javascript.html">JavaScript</a> adds interactive capabilities to 
+web pages, which may interact with forms, buttons, applets, or active images.  
+&browser.name; &release.version; aims to be compatible with the 
+Netscape Navigator<font size=-2><sup>TM</sup></font> 
+3.0 object model and the ECMAScript 1.4 language specification.
+
+<p>
+<li>The user interface and graphics have been significantly redesigned. 
+<p> 
+
+<li>Hundreds of bugs have been fixed.
+<p>
+
+<li>HTML rendering is much more flexible. Pages display more closely to the
+way they are displayed in other popular browsers.
+
+<p>
+<li>The Show HTML Errors option from 1.x releases is no longer available.
+Since &browser.name; &release.version; is much more forgiving of pages that do
+not strictly conform to the HTML standard specifications, the concept 
+of HTML errors in &browser.name; has lost much of its meaning.  
+</ul>
+
+<p>
+<a name=bugs></a>
+<h2>Known Bugs</h2>
+The bugs listed here represent highly visible bugs, and bugs with 
+workarounds you should know about.  
+<ul>
+<li><a href="#general">General Problems</a>
+<li><a href="#navigate">Navigation Problems</a>
+<li><a href="#scroll">Scrolling Problems</a>
+<li><a href="#printing">Printing Problems</a>
+<li><a href="#bookmarks">Bookmark Problems</a>
+<li><a href="#applets">Applet Problems</a>
+<li><a href="#javascript">JavaScript Problems</a>
+<!--
+<li><a href="#display">Page Display and Rendering Problems</a>
+-->
+<li><a href="#l10n">Localization Problems</a>
+</ul>
+
+<p>
+&nbsp;<br>
+<a name="general"></a>
+<dd><b>General Problems</b>
+
+<ul>
+<li>
+Clicking on the Stop button sometimes yields slow response. In particular, 
+if &browser.name; is making a network connection to fetch images, the 
+Stop button cannot interrupt that connection. (4223963)
+<p>
+
+<li>
+Extremely long pages might not display completely on platforms other
+than the JavaStation<font size=-2><sup>TM</sup></font> platform.  (4059963)
+<p>
+
+<li>
+If you delete items from the Certifying Authority Certificates list (on the
+Security Preferences dialog box), and you then click Cancel to change your
+mind, the deleted items do not appear on the list again until you exit and 
+restart the browser. (4228761)  
+<p>
+
+<li>
+If you navigate away from a page with animated GIF images, then return to it
+(for example, via the Back button), the animated GIF images will be refetched
+once from the network, causing extra unexpected network activity.
+<p>
+
+<li>
+If you add invalid values for the SOCKS host and port values on the Proxies
+Preferences panel, including <i>any</i> values if SOCKS is not installed on your
+network, &browser.name; will not be able to access any sites outside of your
+firewall.  The SOCKS settings override all protocol proxy settings, and if
+&browser.name; can't connect using a specified SOCKS proxy host, the connection
+attempt fails.  If you are not using a SOCKS server, do not fill in the SOCKS
+fields on the Proxies Preferences page.
+<p>
+
+</ul>
+
+<a name="navigate"></a>
+<dd><b>Navigation Problems</b>
+<ul>
+<li>
+Internal links sometimes do not work until you click on them twice.  If you 
+use links on a page to navigate within that same page, and then use the Back 
+and Forward buttons, internal links (that is, links that take you to another 
+place on the same page) will no longer work on the first click.
+<p>
+To work around this problem, click on the internal link twice or reload the
+page. (4225548)
+<p>
+
+<li>
+The Back and Forward buttons may take you to incorrect pages after you 
+have navigated around a page using internal links.
+<p>
+
+<li>
+If you navigate to a page with nested frames (that is, frames within frames), 
+and you then navigate within the nested frames, the Reload button may not work 
+as expected.  Instead of reloading only the current frame within the nested
+frames, the original frameset is reloaded, taking you "back" further than you 
+may have intended. (4228584)
+<p>
+
+<li>
+Sometimes surplus characters are appended at the end of a new URL.
+If you are in the middle of loading a page with a long URL in the address 
+field, and you double-click the URL to replace it with a shorter one, 
+extra characters may be appended to the new URL.
+This is most likely to happen if you have a slow connection. (4210335)
+<p>
+
+</ul>
+
+<p>
+<a name="scroll"></a>
+<dd><b>Scrolling Problems</b>
+
+<ul>
+<li>
+If you navigate away from a page with frames (such as the User's Guide Index),
+and then return to it with the Back button, the frame scrollbars may 
+disappear.  You can work around this problem by resizing the page. The
+scrollbars will then return. (4226749)
+<p>
+
+<li>
+Sometimes Page Up, Page Down, and arrow keys do not automatically work to 
+scroll the page.  Click inside the content window or address field to enable 
+these keyboard keys.
+(4222264)
+<p>
+
+<li>(Windows platforms only) Scrolling by dragging the scrollbar thumb can 
+cause many repaints and "smearing" of the page.  Redisplay the page to correct 
+the display if necessary.
+</ul>
+
+<p>
+<a name="printing"></a>
+<dd><b>Printing Problems</b>
+
+<ul>
+<li>
+Some pages may have their content truncated on the right side when
+printed. This happens on pages with very wide text or images, such as pages
+with non-breaking or preformatted text, or pages with tables of a
+large predetermined width.
+<p>
+Try printing the page in Landscape mode.  Unless the page is extremely
+wide, chances are the page can be printed completely in Landscape mode.
+(4178304)
+
+<p>
+<li>
+Pages may be printed with fonts that are slightly larger than you
+might expect.
+
+</ul>
+
+<p>
+<a name="bookmarks"></a>
+<dd><b>Bookmark Problems</b>
+
+<ul>
+<li>
+When you add a new bookmark, it is correctly added in the Edit Bookmarks
+window and it is added to the end of the Bookmarks menu, but it is not
+immediately added in the 
+<nobr><wbr>Edit->Go to Bookmark->Personal Bookmarks</nobr>
+pullright menu.  The new bookmark will appear in this menu after you exit
+and restart the browser.
+<p>
+
+<li>
+Newly added bookmarks are added to the end of the Bookmarks menu even if
+you have disabled the "Show Personal Bookmarks in Bookmarks Menu" option.
+If that option is disabled, the new bookmarks will disappear from 
+the Bookmarks menu and be added to the 
+<nobr><wbr>Edit->Go to Bookmark->Personal Bookmarks</nobr> pullright menu
+after you exit and restart the browser. 
+
+<!--
+<li>
+Bookmark lists may occasionally become corrupted.  If you find that your 
+set of bookmark lists is suddenly incomplete or missing, exit and restart
+the browser.  Your bookmark lists might then be corrected.
+
+<p>
+If exiting and restarting the browser does not correct the problem, exit
+the browser,
+remove the file hotlist.html from the .hotjava subdirectory of your home 
+directory (if it exists), 
+and then restart the browser to regenerate the basic set of bookmark lists,
+and the Netscape<font size=-2><sup>TM</sup></font> bookmarks.
+This will <i>not</i> regenerate bookmarks lost from the Personal Bookmarks or 
+Cool Bookmarks lists, however, so those bookmarks will be lost.
+<p>
+Also, if you have lost bookmarks, look in the .hotjava subdirectory for 
+"backup" hotlist files. &browser.name; may have saved an uncorrupted version 
+of your hotlist in a backup file, which will be called 
+"hotlist.html.&lt;<i>number</i>&gt;".  If so, 
+rename the backup hotlist file to "hotlist.html" and restart the 
+browser.
+-->
+</ul>
+
+<p>
+<a name="applets"></a>
+<dd><b>Applet Problems</b>
+<ul>
+
+<li>
+Due to the &browser.name; security manager, some
+<a href="http://java.sun.com/products/jfc/index.html">Swing</a> applets will 
+not work in &browser.name;.  Swing applets may also cause the browser to hang.
+(4125348, 4123604)
+<p>
+
+<li>
+If applets are disabled when you initially load them, and you then 
+enable applets (using <nobr><wbr>Edit->Security Preferences),</nobr>
+sometimes the applets still won't run after you reload the page.
+If this happens, you'll need to exit and restart &browser.name; in
+order for the applets to run. (4226974)
+<p>
+
+<li>
+(JavaOS platforms only) The pop-up certificate window shows duplicate entries 
+for each signed applet certificate.  If you choose the first certificate in any 
+pair of duplicates, the signed applet will not be allowed to run.  
+<p>
+<i>Always choose the second certificate</i> in each pair of duplicate 
+certificates.  (4216506)
+
+</ul>
+
+<p>
+<a name="javascript"></a>
+<dd><b>JavaScript Problems</b>
+<ul>
+
+<p>
+<li>
+&browser.name; cannot always display the page my.netscape.com.
+This site contains JavaScript that essentially causes &browser.name; 
+to continually reload the page.  In some cases &browser.name; settles 
+down after a while, sometimes displaying the page, and sometimes not.
+(4217945)
+
+<p>
+<li>
+HTML tags created by document<b>.</b>write are not immediately
+accessable to JavaScript.  The following script demonstrates this behavior:
+<pre>
+&lt;SCRIPT&gt;
+document.write('&lt;FORM NAME="myform" METHOD="GET"'+
+	       ' ACTION="foo.html&gt;');
+document.write('&lt;INPUT TYPE="text" NAME="mytext"&gt;');
+document.write('&lt;/FORM&gt;');
+document.myform.mytext.value="Hi there";
+&lt;/SCRIPT&gt;
+</pre>
+
+The attempt to access <nobr><wbr>document<b>.</b>myform<b>.</b>mytext</nobr> 
+inside the script in which it is created will fail.  This is due to the 
+way <nobr><wbr>document<b>.</b>write</nobr> is handled by &browser.name;.  
+When the &lt;/SCRIPT&gt; tag is seen, &browser.name; executes the script 
+to the end, but does not continue parsing the document until the script is 
+finished.  Thus the HTML inserted by the 
+<nobr><wbr>document<b>.</b>write</nobr> calls will not be available to 
+the script, and thus the object 
+<nobr><wbr>document<b>.</b>myform<b>.</b>mytext</nobr> does not yet exist.
+(4206164)
+
+<p>
+<li>
+Setting the alinkColor, vlinkColor, linkColor and bgColor of a
+JavaScript document object will not dynamically update the colors.  
+The value will be saved in the property as normal, however.
+
+<p>
+<li>
+For information on creating web pages containing Y2K-Compliant JavaScript, see 
+the description of the getYear() method in the JavaScript Exceptions document in 
+the administrator documentation shipped with &browser.name;.  This can 
+normally be found in the directory <tt>admin-docs</tt> where your browser is
+installed.
+</ul>
+
+
+<p>
+<a name="l10n"></a>
+<dd><b>Localization Problems</b>
+
+<ul>
+
+<li>In the Korean (ko) and Traditional Chinese (zh_TW.Big5) locales, &browser.name;
+users cannot input ASCII characters into text fields such as the input fields
+for Proxy port settings.  There is no problem in the Address field or multiline 
+text areas.  (4174652) 
+<p>
+This is probably the result of an AWT text area bug (4094365) in the JDK in which
+monospace fonts do not display on certain locales.
+<p>
+There are two possible workarounds:
+<p>
+Run &browser.name; in the C locale:
+<pre>
+    % env LANG=C /opt/SUNWhjb/runbrowser
+</pre>
+
+<i>Or</i>
+<p>
+Change the fontset in the font properties file.  For example, in the Korean
+locale, you would edit <tt>./opt/SUNWhjb/runtime/lib/font.properties.ko</tt>
+and change:
+<pre>
+fontset.monospaced.plain=-sun-kodig-medium-r-normal--*-%d-*-*-c-*-ksc5636-0,
+-sun-kodig-medium-r-normal--*-%d-*-*-c-*-ksc5601.1987-0
+</pre>
+<i>to:</i>
+<pre>
+fontset.monospaced.plain=-sun-gothic-medium-r-normal--*-%d-*-*-c-*-ksc5636-0,
+-sun-kodig-medium-r-normal--*-%d-*-*-c-*-ksc5636-0,-sun-kodig-medium-r-normal
+--*-%d-*-*-c-*-ksc5601.1987-0
+</pre>
+
+<p>
+<li>(Solaris only) &browser.name; ships with a version of the 
+Java Runtime Environment that does not provide support for the euro
+currency symbol.  (4215366)
+
+<p>
+In order to get euro currency character support, 
+you will need to make sure your Solaris operating environment has the
+euro currency symbol support, and you'll need to use a more recent 
+version of the JRE when running &browser.name;. The following steps 
+should be taken:
+<p>
+
+<ol>
+<li>
+Ensure that the Solaris installation is capable of producing the
+euro currency symbol, for example, in a terminal window or a mail message. 
+If not, you probably need to install extra packages to the OS (if using
+Solaris 7), or download patches that provide euro character support for
+Solaris 2.6 or 2.5.1 operating environments.
+<p>
+Contact your Solaris provider for more information, or visit the Sun
+site for information about the 
+<a href="http://www.sun.com/solaris/euro/">euro currency</a> requirements
+and patches. 
+<p>
+Once you've downloaded and installed the required patches, you'll need to
+exit the windowing system and choose one of the euro locales from the
+login language-chooser dialog.  At this point you should be able to
+produce the euro currency symbol on your system.
+
+<p>
+<li>
+Download and install the latest <a href="http://www.sun.com/solaris/jre/"> 
+Java Runtime Environment 1.1 Solaris release</a>.  (At the time these release
+notes were written, this is Solaris_JRE_1.1.7_06, which does provide support 
+for the euro currency symbol.)
+
+<p>
+<li>
+Run the HotJava Browser installer, and choose the option to use a
+virtual machine already installed on your machine instead of the default
+JRE shipped with &browser.name;.  For example, if you installed the 1.1.7
+JRE in <tt>/usr/local/java</tt>, then pick the binary 
+<tt>/usr/local/java/Solaris_JRE_1.1.7_06/bin/jre</tt> at the "Choose 
+another virtual machine" option in the installer.
+</ul>
+</ul>
+
+</dl>
+
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+<p>
+
+</body>
+</html>

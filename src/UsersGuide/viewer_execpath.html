@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>
+Setting the exec.path Property 
+</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE=
+"0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Setting the exec.path Property</font>
+<p>
+
+<b>Note:</b> The information on this page is for the Content Viewers 
+feature, which is not available on all platforms.
+If the <nobr><wbr>Edit->Content Viewer Preferences</nobr> 
+option is missing, (for example, if you are running 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix;
+on the JavaStation<font size=-2><sup>TM</sup></font> platform), the 
+information on this page does not apply to your browser.
+
+<p>
+On the Content Viewer Preferences page, you can specify what &browser.name;
+should do when it needs to display files of a particular type.  One
+option is to launch an external application to display that content.
+Whenever the <b>Action</b> listed for a particular content type is
+<b>View in Application</b>, &browser.name; must be able to find the 
+specified application.  &browser.name; is shipped with a default set of
+application mappings that it tries to launch for various content types, but 
+it cannot know where to find those applications on your system without 
+you specifying the application locations.
+
+<p>
+<a name="ExecPathProperty"></a>
+You <em>must</em> tell &browser.name; where on your system to find the external 
+applications listed in the viewer application mappings.  You do this by setting 
+the <b>exec.path</b> property in your &browser.name; properties file. 
+(The exception is when you add a new content type, with the action View 
+in Application, and you explicitly specify the full path name for the 
+application. In this case you do not have to list that particular application's 
+path in your exec.path property.) 
+
+<p>
+If you try to download a file and &browser.name; displays the message 
+<b>Unable to Launch Viewer</b>, you probably do not have your exec.path 
+property set correctly.
+<p>
+The exec.path property is a vertical bar-separated list of full 
+directory names on your machine where &browser.name; should look for 
+external viewer applications. 
+<p>
+Refer to the section below that corresponds to your platform for information
+about setting the exec.path property for the supported set of viewer 
+applications.
+<p>
+<a href="#win">Windows Systems</a>
+<br>
+<a href="#solaris">Solaris Systems</a>
+<p>
+<hr>
+<h2>
+Setting exec.path on Windows Systems<a name=win></a>
+</h2>
+On Windows systems, the properties file is in your home directory if the
+environment variable HOME, HOMEDRIVE, or HOMEPATH is set. Otherwise it is:
+<pre>
+   <i>browser-install-directory</i>\.hotjava\properties
+</pre>
+Add the exec.path setting to this file. Note that you need to quit 
+&browser.name; before editing this file, or else your edits will be lost 
+when you later quit the current browser session.
+<p>
+A typical exec.path setting on Windows NT might be:
+<pre>
+   exec.path=c:\\winnt35\\system32|c:\\winnt35
+</pre>
+<p>
+<b>Note the double \\'s in this property.</b> The backslash (<b>\</b>) is
+the Escape character for the properties file. This means &browser.name; interprets
+the character following a <b>\</b> literally. Whenever &browser.name; finds a 
+<b>\</b> in the properties file, it ignores any special meanings for
+the character that follows it. Since the <b>\</b> character itself has
+a special meaning, you must use double backslash (<b>\\</b>) in the 
+properties file to get a single backslash (<b>\</b>).
+
+<p>
+To ensure that &browser.name; can execute a basic set of applications that
+&browser.name; might launch on Windows systems, make sure your 
+exec.path property lists the paths for these applications: xanim, wordpad, 
+acroread, and mplayer.
+<p>
+
+<hr>
+<h2>
+Setting exec.path on Solaris<font size=-2><sup>TM</sup></font> 
+Systems <a name=solaris></a>
+</h2>
+
+On Solaris systems, your properties file is:
+<pre>
+   $HOME/.hotjava/properties
+</pre>
+Add the exec.path setting to this file. Note that you need to quit
+&browser.name; before editing this file, or else your edits will be lost 
+when you later quit the current browser session.
+<p>
+A typical setting of the exec.path property for Solaris users might be:
+<pre>
+   exec.path=/usr/bin|/usr/local/bin|/bin|/usr/dist/exe
+</pre>
+
+<p>
+To ensure that &browser.name; can execute a common set of applications that
+&browser.name; might launch on Solaris systems, make sure your exec.path 
+property lists the paths for these applications: acroread, imagetool, 
+xterm, troff, nroff, col, more, xdvi, audiotool, textedit, applix, and 
+mpeg_play.
+<p
+
+<hr>
+<p>
+<p>
+ 
+<table>
+<tr>
+   <td width="170"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+<p>
+
+
+</body>
+</html>
+

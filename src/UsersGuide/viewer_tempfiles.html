@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>Temporary Files for Content Viewer Applications
+</title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG src="doc:/lib/images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE=
+"0" VSPACE="6">
+<br>
+<font color="666699" face="Helvetica, Arial" size="+3">Temporary Files for Content
+Viewer Applications</font>
+<p>
+
+<b>Note:</b> The information on this page is for the Content Viewers
+feature, which is not available on all platforms.  If the 
+<nobr><wbr>Edit->Content Viewers</nobr> option is missing,
+(for example, if you are running 
+&browser.name.prefix;<font size=-2><sup>TM</sup></font> &browser.name.suffix;
+on the JavaStation<font size=-2><sup>TM</sup></font> platform), the
+information on this page does not apply to your browser.
+<p>
+
+<h2><a name="ContentHandlers">Temporary Files for Content Handlers</a></h2>
+
+When &browser.name; displays an application within the browser, it uses a 
+content handler to do so.  A content handler may create temporary files.  
+By default, these are created in the <tt>/tmp</tt> directory on 
+Solaris<font size=-2><sup>TM</sup></font> systems, or the 
+<tt>c:\temp</tt> directory for Windows systems.  Windows users who do not 
+have a <tt>c:\temp</tt> directory should edit the 
+Java<font size=-2><sup>TM</sup></font> runtime environment file:
+
+<p>
+<tt><i>hotjava-install-directory</i>\runtime\lib\content-types.properties</tt>
+<p>
+
+<a name="TempFileTemplateProperty"></a>
+Change the <b>temp.file.template</b> property near the top of the file
+to use an alternative directory for the temporary files.
+
+<p>
+<b>Note:</b> You should not edit the content-types.properties file other 
+than to change the value of the temp.file.template property. Also, note that 
+the "\" character is the escape character in this file. Therefore, to 
+specify "\" in a directory name for Windows systems, you'll need to type "\\".
+
+<p>
+&browser.name; never deletes the temporary files created by
+content handlers.
+
+<p>
+<a name="UnknownViewer"></a>
+<h2>Temporary Files for Unknown Content Viewer Applications</h2>
+When &browser.name; doesn't know how to handle content of a particular
+type, it displays the "Unknown Viewer" page to ask you what
+to do with the content.  If you specify that an application should be
+launched, a temporary file is created to pass the data to the application.
+In this case, temporary files are created in one of the following directories:
+
+<ol>
+<li>If possible, they are put in a <tt>temp</tt> subdirectory of the 
+<tt>.hotjava</tt> directory. The <tt>.hotjava</tt> directory is placed 
+in your home directory if you have one. Windows users without home directories 
+will find the <tt>.hotjava</tt> directory under the directory where 
+&browser.name; is installed.
+
+<p>
+<li>If that fails, the temporary files are created in the directory specified 
+by the HOTJAVA_HOME environment variable.
+
+<p>
+<li>If that fails, they are created in the directory in which &browser.name;
+was started.
+</ol>
+
+<p>
+By default, &browser.name; does not delete these temporary files.
+This is because some applications, especially on Solaris systems, 
+spawn other applications that try to access them. If &browser.name; 
+deletes the temporary file after the application it creates is
+finished, and that application has started another application, 
+the child application may attempt to read the temporary file after it 
+has been deleted.
+
+<p>
+<a name="ViewerUnknownDeleteProperty"></a>
+If you know that the applications you launch do not create child applications, 
+you can safely change &browser.name; to delete the temporary files it creates. 
+To do so, add the following property to your properties file (described below): 
+
+<pre>
+  viewerunknown.delete.tmpfile=true 
+</pre>
+
+<b>On Windows systems</b>, the properties file is in your home directory if the
+environment variable HOME, HOMEDRIVE, or HOMEPATH is set. Otherwise it is:
+
+<pre>
+  <i>hotjava-install-directory</i>\.hotjava\properties
+</pre>
+
+Add the viewerunkown.delete.tmpfile=true property to this file. Note that you 
+need to quit &browser.name; before editing this file, or else your edits will be 
+lost when you later quit the current browser session.
+
+<p>
+<b>On Solaris systems,</b> your properties file is:
+
+<pre>
+  $HOME/.hotjava/properties
+</pre>
+
+Add the viewerunkown.delete.tmpfile=true property to this file. Note that you need 
+to quit &browser.name; before editing this file, or else your edits will be 
+lost when you later quit the current browser session.
+
+<p>
+<hr>
+<p>
+<p>
+ 
+<table>
+<tr>
+   <td width="170"> 
+   <a href="toc.html">Table of Contents</a>
+   </td>
+
+   <td>
+   <a href="UGindex.html">INDEX</a>
+   </td>
+
+</tr>
+</table>
+
+<p>
+<font size=-2><a href="Legal_PRN.html">Copyright &copy; Sun Microsystems,
+Inc.</a></font>
+
+<p>
+</body>
+</html>
+

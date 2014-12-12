@@ -1,0 +1,47 @@
+<!-- @(#)app-launch-error.html	1.3 99/03/12 -->
+<html>
+<head>
+<title>Unable to Launch Viewer</title>
+<meta name=type content="hotjava/error">
+</head>
+
+<body bgcolor="#ffffff">
+
+<IMG SRC="../images/banner.gif" WIDTH="100%" HEIGHT="6" BORDER="0" HSPACE="0" VSPACE="6"><br>
+
+<font color="666699" size="+3">Unable to Launch Viewer</font>
+<hr>
+
+&browser.name; is unable to launch the application "&appname;" 
+to view the file <a href="&url;">&url;</a>.
+<p>
+The information for launching applications, (or <i>external content 
+viewers</i>), from &browser.name; is probably not set correctly. 
+<p>
+An external content viewer is an application external to &browser.name; 
+used to view a file. 
+<p>
+To do something with this file right now, choose one of the following:
+<ul>
+<li>Click on <strong>Save</strong> to save the file to your local file system. 
+<li>Click on <strong>View in &browser.name;</strong> to attempt to view the file 
+in &browser.name;.
+<li>Click on <strong>View in Application</strong> to choose an 
+application to launch in order to view the file you clicked on.
+</ul>
+<p>
+Note: Clicking on any of these buttons is a one-time operation and does 
+not result in any permanent configuration of &browser.name;.
+
+<hr>
+
+<center>
+<applet code="&applet.package;.ContentViewerUnknownApplet"
+        width="400"
+	height="52">
+  <param name=url value="&url">
+</applet>
+</center>
+
+</body>
+</html>
