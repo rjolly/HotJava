@@ -7,14 +7,12 @@ package sunw.hotjava.tags;
 
 import java.awt.*;
 import java.awt.image.ImageObserver;
-import java.io.PrintStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Enumeration;
 import java.util.Vector;
 import sun.awt.ScreenUpdater;
 import sun.awt.UpdateClient;
-import sun.misc.Ref;
 import sunw.hotjava.bean.ImageCacherImageRef;
 import sunw.hotjava.doc.*;
 import sunw.hotjava.misc.*;
@@ -86,7 +84,7 @@ public class IMG extends EmptyTagItem
         {
             synchronized(doc)
             {
-                i = getIndex();
+                int i = getIndex();
                 doc.update(i << 12, i + 1 << 12);
             }
         }

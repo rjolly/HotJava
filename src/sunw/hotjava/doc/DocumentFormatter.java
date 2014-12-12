@@ -9,13 +9,13 @@ import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.Transferable;
 import java.awt.event.*;
-import java.io.PrintStream;
 import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.text.Format;
 import java.text.MessageFormat;
-import java.util.*;
+import java.util.BitSet;
+import java.util.Enumeration;
+import java.util.Vector;
 import sun.awt.ScreenUpdater;
 import sun.awt.UpdateClient;
 import sunw.hotjava.bean.HotJavaBrowserBean;
@@ -136,7 +136,7 @@ public class DocumentFormatter extends Formatter
         Container container1 = getParent();
         if(container1 == null)
             return;
-        formatterMouseListener = new Formatter.FormatterMouseListener(this);
+        formatterMouseListener = new Formatter.FormatterMouseListener();
         ScriptingEngineInterface scriptingengineinterface = Globals.getScriptingEngine();
         if(scriptingengineinterface != null && flag)
             try
@@ -1058,7 +1058,7 @@ public class DocumentFormatter extends Formatter
         boolean flag = false;
         int k2 = super.docWidth;
         int l2 = super.docHeight;
-        boolean flag1 = k;
+        boolean flag1 = k == 1;
         if(getVScrollBarWidth() == 0)
         {
             int i3 = Math.max(scroller.getVScrollbarWidth(), 15);

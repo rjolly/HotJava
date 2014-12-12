@@ -25,7 +25,7 @@ public class BrowserAppletManager
             securityManager = new BrowserSecurityManager(1);
         else
             securityManager = new BrowserSecurityManager();
-        System.setSecurityManager(securityManager);
+//        System.setSecurityManager(securityManager);
     }
 
     public ClassLoader refClassLoader(URL url, String as[], Object obj)

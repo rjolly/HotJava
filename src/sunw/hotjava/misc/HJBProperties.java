@@ -357,7 +357,7 @@ public class HJBProperties extends Properties
 
     public void put(String s, String s1)
     {
-        put(s, s1);
+        put((Object)s, (Object)s1);
     }
 
     public boolean isChanged()

@@ -2995,7 +2995,7 @@ public abstract class Formatter
     public int width;
     public int height;
     static final int FINISHED = 128;
-    protected Document doc;
+    public Document doc;
     protected DocumentState ds;
     private DocumentEventMulticaster listeners;
     protected int docWidth;

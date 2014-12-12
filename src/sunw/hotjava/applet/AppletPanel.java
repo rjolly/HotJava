@@ -100,9 +100,9 @@ public abstract class AppletPanel extends Panel
 
     protected abstract String getCode();
 
-    protected abstract int getWidth();
+    public abstract int getWidth();
 
-    protected abstract int getHeight();
+    public abstract int getHeight();
 
     protected abstract String getJarFiles();
 

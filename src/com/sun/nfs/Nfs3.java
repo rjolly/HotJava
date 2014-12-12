@@ -110,7 +110,7 @@ class Nfs3 extends Nfs
             Xdr xdr = new Xdr(super.rsize + 200);
             super.rpc.rpc_header(xdr, 4);
             xdr.xdr_bytes(super.fh);
-            xdr.xdr_int(flag | byte0);
+            xdr.xdr_int((flag?1:0) | byte0);
             Xdr xdr1 = super.rpc.rpc_call(xdr, 5000, 0);
             int j = xdr1.xdr_int();
             if(xdr1.xdr_bool())
@@ -121,7 +121,7 @@ class Nfs3 extends Nfs
             accessTime = attr.mtime;
         }
         if((i & 4) != 0)
-            return (accessBits & flag) != 0;
+            return (accessBits & (flag?1:0)) != 0;
         if((i & 2) != 0)
             return (accessBits & byte0) != 0;
         else

@@ -291,12 +291,12 @@ class ProxiesPanel extends Panel
         if(flag)
         {
             HttpClient.resetProperties();
-            if(props.isPropertyExists("ftpProxySet"))
-                FtpClient.useFtpProxy = props.getBoolean("ftpProxySet");
-            else
-                FtpClient.useFtpProxy = true;
-            FtpClient.ftpProxyHost = props.getProperty("ftpProxyHost");
-            FtpClient.ftpProxyPort = props.getInteger("ftpProxyPort", 80);
+//            if(props.isPropertyExists("ftpProxySet"))
+//                FtpClient.useFtpProxy = props.getBoolean("ftpProxySet");
+//            else
+//                FtpClient.useFtpProxy = true;
+//            FtpClient.ftpProxyHost = props.getProperty("ftpProxyHost");
+//            FtpClient.ftpProxyPort = props.getInteger("ftpProxyPort", 80);
         }
         return 1;
     }

@@ -625,8 +625,8 @@ public final class Document
             else
                 obj = new FlowTagItem();
         }
-        obj.style = StyleSheet.getStyleSheet(element);
-        obj.atts = attributes;
+        ((TagItem)obj).style = StyleSheet.getStyleSheet(element);
+        ((TagItem)obj).atts = attributes;
         try
         {
             ((TagItem) (obj)).init(this);

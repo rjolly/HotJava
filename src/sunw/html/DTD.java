@@ -19,9 +19,6 @@ public class DTD
 
     protected DTD(String s)
     {
-        elements = new Vector();
-        elementHash = new Hashtable();
-        entityHash = new Hashtable();
         name = s;
         defEntity("#RE", 0x10000, 13);
         defEntity("#RS", 0x10000, 10);
@@ -290,9 +287,9 @@ public class DTD
     }
 
     public String name;
-    public Vector elements;
-    public Hashtable elementHash;
-    public Hashtable entityHash;
+    public Vector elements = new Vector();
+    public Hashtable elementHash = new Hashtable();
+    public Hashtable entityHash = new Hashtable();
     public final Element pcdata = getElement("#pcdata");
     public final Element html = getElement("html");
     public final Element meta = getElement("meta");

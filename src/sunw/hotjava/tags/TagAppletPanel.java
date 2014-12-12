@@ -12,7 +12,10 @@ import java.awt.image.ImageObserver;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.*;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Vector;
 import sun.applet.AppletAudioClip;
 import sun.awt.ScreenUpdater;
 import sun.awt.UpdateClient;
@@ -32,6 +35,18 @@ import sunw.html.Attributes;
 public class TagAppletPanel extends AppletPanel
     implements DocPanel, AppletContext, DocConstants, ImageObserver, UpdateClient, DocumentEventSource, SizeItem
 {
+
+	public void setStream(String key, InputStream stream) throws IOException {
+	}
+
+	public InputStream getStream(String key) {
+		return null;
+	}
+
+	public Iterator getStreamKeys() {
+		return null;
+	}
+
     private final class AppletEventListener
         implements AppletListener
     {

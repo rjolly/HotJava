@@ -6,7 +6,9 @@
 package sunw.hotjava.tags;
 
 import java.awt.*;
-import java.util.*;
+import java.util.BitSet;
+import java.util.StringTokenizer;
+import java.util.Vector;
 import sunw.hotjava.bean.HotJavaBrowserBean;
 import sunw.hotjava.doc.*;
 import sunw.html.Attributes;

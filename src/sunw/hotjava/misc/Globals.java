@@ -12,9 +12,6 @@ import java.lang.reflect.Method;
 import java.net.*;
 import java.util.StringTokenizer;
 import java.util.Vector;
-import sun.applet.AppletClassLoader;
-import sun.applet.AppletResourceLoader;
-import sun.net.ftp.FtpClient;
 import sun.net.www.http.HttpClient;
 import sun.net.www.protocol.http.HttpURLConnection;
 import sunw.hotjava.applet.ScriptingEngineLoader;
@@ -76,13 +73,14 @@ public class Globals
                         if(inputstream != null)
                             try
                             {
-                                scriptingengineloader.getResourceLoader().loadJar(url, inputstream);
+//                                scriptingengineloader.getResourceLoader().loadJar(url, inputstream);
                             }
                             finally
                             {
                                 inputstream.close();
                             }
-                        engine = (ScriptingEngineInterface)scriptingengineloader.loadClass("com.sun.javascript.ScriptingEngine").newInstance();
+//                        engine = (ScriptingEngineInterface)scriptingengineloader.loadClass("com.sun.javascript.ScriptingEngine").newInstance();
+                        engine = (ScriptingEngineInterface)(new URLClassLoader(new URL[] {ClassLoader.getSystemResource("lib/js.jar")})).loadClass("com.sun.javascript.ScriptingEngine").newInstance();
                     }
                     catch(IOException ioexception)
                     {
@@ -152,12 +150,12 @@ public class Globals
     {
         HJBProperties hjbproperties = HJBProperties.getHJBProperties("beanPropertiesKey");
         HttpClient.resetProperties();
-        if(hjbproperties.isPropertyExists("ftpProxySet"))
-            FtpClient.useFtpProxy = hjbproperties.getBoolean("ftpProxySet");
-        else
-            FtpClient.useFtpProxy = true;
-        FtpClient.ftpProxyHost = hjbproperties.getProperty("ftpProxyHost");
-        FtpClient.ftpProxyPort = hjbproperties.getInteger("ftpProxyPort", 80);
+//        if(hjbproperties.isPropertyExists("ftpProxySet"))
+//            FtpClient.useFtpProxy = hjbproperties.getBoolean("ftpProxySet");
+//        else
+//            FtpClient.useFtpProxy = true;
+//        FtpClient.ftpProxyHost = hjbproperties.getProperty("ftpProxyHost");
+//        FtpClient.ftpProxyPort = hjbproperties.getInteger("ftpProxyPort", 80);
     }
 
     public static Object getAwtLock()

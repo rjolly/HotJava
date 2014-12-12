@@ -29,8 +29,8 @@ public class URLPoolBeanInfo extends SimpleBeanInfo
             Class aclass3[] = {
                 java.lang.String.class
             };
-            if(array$Lsunw$hotjava$bean$PoolEntry == null)
-                array$Lsunw$hotjava$bean$PoolEntry = _mthclass$("[Lsunw.hotjava.bean.PoolEntry;");
+//            if(array$Lsunw$hotjava$bean$PoolEntry == null)
+//                array$Lsunw$hotjava$bean$PoolEntry = _mthclass$("[Lsunw.hotjava.bean.PoolEntry;");
             Class aclass4[] = {
                 Integer.TYPE
             };

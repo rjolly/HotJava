@@ -1019,7 +1019,7 @@ label0:
         layout();
     }
 
-    int getHeight()
+    public int getHeight()
     {
         validate();
         return tableHeight + 2 * (borderWidth + cellSpacing);

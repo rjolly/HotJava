@@ -6,21 +6,41 @@
 package sunw.hotjava.bean;
 
 import java.awt.*;
-import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.beans.*;
 import java.io.*;
 import java.net.*;
-import java.util.*;
+import java.util.Date;
+import java.util.Enumeration;
+import java.util.Observable;
+import java.util.Observer;
+import java.util.StringTokenizer;
+import java.util.Vector;
 import sun.io.ByteToCharConverter;
 import sun.net.ProgressData;
 import sun.net.ProgressEntry;
 import sunw.hotjava.applet.AppletManager;
-import sunw.hotjava.doc.*;
+import sunw.hotjava.doc.DocException;
+import sunw.hotjava.doc.DocFont;
+import sunw.hotjava.doc.DocPanel;
+import sunw.hotjava.doc.DocParser;
+import sunw.hotjava.doc.Document;
+import sunw.hotjava.doc.DocumentCache;
+import sunw.hotjava.doc.DocumentEvent;
+import sunw.hotjava.doc.DocumentEventSource;
+import sunw.hotjava.doc.DocumentFormatter;
+import sunw.hotjava.doc.DocumentFormatterPanel;
+import sunw.hotjava.doc.DocumentFormatterRef;
+import sunw.hotjava.doc.DocumentListener;
+import sunw.hotjava.doc.DocumentPanel;
+import sunw.hotjava.doc.DocumentStack;
+import sunw.hotjava.doc.ElementInfo;
+import sunw.hotjava.doc.Formatter;
+import sunw.hotjava.doc.NamedLink;
+import sunw.hotjava.doc.TextItem;
 import sunw.hotjava.forms.FormPanel;
 import sunw.hotjava.misc.*;
 import sunw.hotjava.tags.*;
-import sunw.html.Attributes;
 
 // Referenced classes of package sunw.hotjava.bean:
 //            BeanConfirmDialog, BrowserHistoryEvent, BrowserHistoryListener, ClientPuller, 

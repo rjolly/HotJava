@@ -164,10 +164,10 @@ public class HotJavaBrowserBeanBeanInfo extends SimpleBeanInfo
             Class aclass10[] = {
                 Boolean.TYPE
             };
-            if(class$java$lang$String == null)
-                class$java$lang$String = _mthclass$("java.lang.String");
-            if(class$java$lang$Object == null)
-                class$java$lang$Object = _mthclass$("java.lang.Object");
+//            if(class$java$lang$String == null)
+//                class$java$lang$String = _mthclass$("java.lang.String");
+//            if(class$java$lang$Object == null)
+//                class$java$lang$Object = _mthclass$("java.lang.Object");
             Class aclass11[] = {
                 Integer.TYPE, java.lang.String.class
             };

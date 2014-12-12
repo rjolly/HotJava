@@ -5,13 +5,9 @@
 
 package sunw.hotjava.doc;
 
-import java.awt.Component;
-import java.awt.ScrollPane;
-import java.io.PrintStream;
 import java.net.URL;
 import java.util.Vector;
 import sunw.hotjava.bean.HotJavaBrowserBean;
-import sunw.hotjava.misc.Globals;
 import sunw.hotjava.misc.HJBProperties;
 
 // Referenced classes of package sunw.hotjava.doc:
@@ -262,7 +258,7 @@ public class DocumentStack
     {
         if(i == 0)
         {
-            owner.forceRelayout();
+            owner.invalidate();
             return;
         } else
         {

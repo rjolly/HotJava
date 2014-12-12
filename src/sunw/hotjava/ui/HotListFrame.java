@@ -7,7 +7,6 @@ package sunw.hotjava.ui;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.io.PrintStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.StringTokenizer;
@@ -339,7 +338,7 @@ public class HotListFrame extends UserFrame
         return HotList.getHotList();
     }
 
-    public HJFrame getOwner()
+    public Window getOwner()
     {
         return owner;
     }

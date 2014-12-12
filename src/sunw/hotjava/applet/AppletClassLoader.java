@@ -456,7 +456,7 @@ label1:
         System.err.println(s3);
     }
 
-    private synchronized Class findClass(String s)
+    protected synchronized Class findClass(String s)
     {
         Class class1 = findLoadedClass(s);
         if(class1 != null)

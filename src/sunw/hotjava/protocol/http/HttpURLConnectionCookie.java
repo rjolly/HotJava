@@ -100,12 +100,12 @@ public class HttpURLConnectionCookie extends HttpURLConnection
 
     public void finalize()
     {
-        if(super.pe != null)
-        {
-            unclosedStreamHandler.setProgressEntry(super.pe);
-            RequestProcessor.getHJBeanQueue().postRequest(unclosedStreamHandler);
-            super.pe = null;
-        }
+//        if(super.pe != null)
+//        {
+//            unclosedStreamHandler.setProgressEntry(super.pe);
+//            RequestProcessor.getHJBeanQueue().postRequest(unclosedStreamHandler);
+//            super.pe = null;
+//        }
     }
 
     private boolean inputGiven;
