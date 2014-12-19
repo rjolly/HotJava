@@ -64,7 +64,7 @@ class DerInputBuffer extends ByteArrayInputStream
         if(derinputbuffer.available() != available())
             return false;
         for(int j = 0; j < i; j++)
-            if(super.buf[super.pos + j] != ((ByteArrayInputStream) (derinputbuffer)).buf[((ByteArrayInputStream) (derinputbuffer)).pos + j])
+            if(super.buf[super.pos + j] != derinputbuffer.buf[derinputbuffer.pos + j])
                 return false;
 
         return true;

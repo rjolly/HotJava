@@ -6,7 +6,6 @@
 package sun.security.util;
 
 import java.io.*;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
@@ -38,8 +37,8 @@ public class DerOutputStream extends ByteArrayOutputStream
         throws IOException
     {
         write(byte0);
-        putLength(((ByteArrayOutputStream) (deroutputstream)).count);
-        write(((ByteArrayOutputStream) (deroutputstream)).buf, 0, ((ByteArrayOutputStream) (deroutputstream)).count);
+        putLength(deroutputstream.count);
+        write(deroutputstream.buf, 0, deroutputstream.count);
     }
 
     public void putDerValue(DerValue dervalue)
